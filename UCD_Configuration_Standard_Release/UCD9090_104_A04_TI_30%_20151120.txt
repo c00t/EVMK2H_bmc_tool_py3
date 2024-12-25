@@ -1,0 +1,790 @@
+# Format=Tab; Hex=CompactUpper; BreakOutBytes=True; PEC=False [DO NOT REMOVE THIS LINE IF YOU WANT TO IMPORT USING A FUSION TOOL]
+# For reads, the last field is what is expected back from the device
+# Creator: Texas Instruments Fusion Digital Power Designer v2.0.50
+# Date: Monday, February 15, 2016
+# Exported from UCD9090 - Firmware: 2.3.5.0
+# Write VOUT_MODE [Rail #1] EXP -12
+# I2CWrite	D0	00	00
+I2CWrite	D0	20	14
+# Write VOUT_MODE [Rail #2] EXP -14
+I2CWrite	D0	00	01
+I2CWrite	D0	20	12
+# Write VOUT_MODE [Rail #3] EXP -13
+I2CWrite	D0	00	02
+I2CWrite	D0	20	13
+# Write VOUT_MODE [Rail #4] EXP -13
+I2CWrite	D0	00	03
+I2CWrite	D0	20	13
+# Write VOUT_MODE [Rail #5] EXP -13
+I2CWrite	D0	00	04
+I2CWrite	D0	20	13
+# Write VOUT_MODE [Rail #6] EXP -14
+I2CWrite	D0	00	05
+I2CWrite	D0	20	12
+# Write VOUT_MODE [Rail #7] EXP -14
+I2CWrite	D0	00	06
+I2CWrite	D0	20	12
+# Write VOUT_MODE [Rail #8] EXP -11
+I2CWrite	D0	00	07
+I2CWrite	D0	20	15
+# Write VOUT_MODE [Rail #9] EXP -13
+I2CWrite	D0	00	08
+I2CWrite	D0	20	13
+# Write VOUT_MODE [Rail #10] EXP 0
+I2CWrite	D0	00	09
+I2CWrite	D0	20	00
+# Write MONITOR_CONFIG [MFR 05] Pin 1 MON1: Rail #4, Type Voltage; Pin 2 MON2: Rail #5, Type Voltage; Pin 38 MON3: Rail #8, Type Voltage, HW Comparator, AVS); Pin 39 MON4: Rail #1, Type Voltage, HW Comparator, AVS); Pin 40 MON5: Rail #3, Type Voltage, HW Comparator, AVS); Pin 41 MON6: Rail #2, Type Voltage, HW Comparator, AVS); Pin 42 MON7: Rail #6, Type Voltage; Pin 45 MON8: Rail #7, Type Voltage; Pin 46 MON9: Rail #9, Type Voltage; Pin 48 MON10: Rail #10, Type Temperature; Pin 37 MON11: Not Assigned
+I2CWrite	D0	D5	0B	23	24	87	80	82	81	25	26	28	49	00
+# Write GPI_CONFIG [MFR 41] Inputs: Pin 22 GPI1_PWM1 ActiveHigh Input,Pin 23 GPI2_PWM2 ActiveHigh Input
+I2CWrite	D0	F9	0D	45	4D	00	00	00	00	00	00	00	00	00	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #1] Rail On Dep: <None> | GPI On Dep: S | Rail Off Dep: Rail #2 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Pin 7 GPIO4 ActiveHigh ActivelyDrivenOutput; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	00
+#I2CWrite	D0	F6	0C	96	01	00	00	00	00	00	00	00	02	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #2] Rail On Dep: Rail #1 | GPI On Dep: <None> | Rail Off Dep: Rail #3 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Pin 21 GPIO14 ActiveHigh ActivelyDrivenOutput; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	01
+I2CWrite	D0	F6	0C	56	00	00	00	00	00	00	01	00	04	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #3] Rail On Dep: Rail #2 | GPI On Dep: <None> | Rail Off Dep: Rail #4 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Pin 18 GPIO13 ActiveHigh ActivelyDrivenOutput; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	02
+I2CWrite	D0	F6	0C	9E	00	00	00	00	00	00	02	00	08	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #4] Rail On Dep: <None> | GPI On Dep: T | Rail Off Dep: Rail #5 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Unassigned; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	03
+I2CWrite	D0	F6	0C	00	02	00	00	00	00	00	00	00	10	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #5] Rail On Dep: Rail #4 | GPI On Dep: <None> | Rail Off Dep: Rail #6,7 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Unassigned; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	04
+I2CWrite	D0	F6	0C	00	00	00	00	00	00	00	08	00	60	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #6] Rail On Dep: Rail #5 | GPI On Dep: <None> | Rail Off Dep: Rail #9 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Pin 26 GPIO17 ActiveHigh ActivelyDrivenOutput; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	05
+I2CWrite	D0	F6	0C	B6	00	00	00	00	00	00	10	01	00	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #7] Rail On Dep: Rail #5 | GPI On Dep: <None> | Rail Off Dep: Rail #8 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Unassigned; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	06
+I2CWrite	D0	F6	0C	5C	00	00	00	00	00	00	10	00	80	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #8] Rail On Dep: Rail #6,7 | GPI On Dep: <None> | Rail Off Dep: Rail #9 | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Pin 6 GPIO3 ActiveHigh ActivelyDrivenOutput; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	07
+I2CWrite	D0	F6	0C	8E	00	00	00	00	00	00	60	01	00	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #9] Rail On Dep: Rail #8 | GPI On Dep: <None> | Rail Off Dep: <None> | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Unassigned; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	08
+I2CWrite	D0	F6	0C	04	00	00	00	00	00	00	80	00	00	00	00
+# Write SEQ_CONFIG [MFR 38,Rail #10] Rail On Dep: <None> | GPI On Dep: <None> | Rail Off Dep: <None> | GPI Off Dep: <None> | Fault Dep: <None> | Enable: Unassigned; Seq On Timeout: 0 / Wait Indefinitely; Seq Off Timeout: 0 / Wait Indefinitely
+I2CWrite	D0	00	09
+I2CWrite	D0	F6	0C	04	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_1 [MFR 40] Pin 4 GPIO1 ActiveHigh ActivelyDrivenOutput; INPUT_S ? INPUT_T ? RAIL2 ? RAIL3 [POWER_GOOD]
+I2CWrite	D0	F7	00
+I2CWrite	D0	F8	15	7E	00	05	00	00	00	06	03	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_2 [MFR 40] Pin 24 GPIO15 ActiveHigh ActivelyDrivenOutput; INPUT_S ? RAIL2 ? RAIL3 [POWER_GOOD]
+I2CWrite	D0	F7	01
+I2CWrite	D0	F8	15	A6	00	05	00	80	00	06	01	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_3 [MFR 40] Pin 5 GPIO2 ActiveHigh ActivelyDrivenOutput; INPUT_S ? INPUT_T ? OUTPUT_X ? OUTPUT_X ? RAIL2 ? RAIL3 ? RAIL4 [POWER_GOOD]
+I2CWrite	D0	F7	02
+I2CWrite	D0	F8	15	86	00	05	00	00	00	0E	03	03	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_4 [MFR 40] Pin 25 GPIO16 ActiveHigh ActivelyDrivenOutput; INPUT_S ? INPUT_T ? OUTPUT_X ? OUTPUT_X ? OUTPUT_X ? RAIL2 ? RAIL3 ? RAIL4 ? RAIL5 ? RAIL6 ? RAIL7 [POWER_GOOD]
+I2CWrite	D0	F7	03
+I2CWrite	D0	F8	15	AE	00	05	00	00	00	7E	03	07	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_5 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	04
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_6 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	05
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_7 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	06
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_8 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	07
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_9 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	08
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write GPO_CONFIG_10 [MFR 40] Unassigned; No Mask
+I2CWrite	D0	F7	09
+I2CWrite	D0	F8	15	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write PWM_CONFIG_0 [MFR 17] Pin_ID = 0; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	00
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_1 [MFR 17] Pin_ID = 1; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	01
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_2 [MFR 17] Pin_ID = 2; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	02
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_3 [MFR 17] Pin_ID = 3; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	03
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_4 [MFR 17] Pin_ID = 4; Duty Cycle: 90.0 %; Frequency: 15.26 kHz; Phase: 0.0 deg
+I2CWrite	D0	E0	04
+I2CWrite	D0	E1	08	EA	D0	00	00	3B	9B	80	00
+# Write PWM_CONFIG_5 [MFR 17] Pin_ID = 5; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	05
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_6 [MFR 17] Pin_ID = 6; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	06
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_7 [MFR 17] Pin_ID = 7; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	07
+I2CWrite	D0	E1	08	88	00	00	00	00	00	80	00
+# Write PWM_CONFIG_8 [MFR 17] Pin_ID = 8; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	08
+I2CWrite	D0	E1	08	88	00	00	00	00	00	00	00
+# Write PWM_CONFIG_9 [MFR 17] Pin_ID = 9; Duty Cycle: 0.0 %; Frequency: 0 Hz; Phase: 0.0 deg
+I2CWrite	D0	E0	09
+I2CWrite	D0	E1	08	88	00	00	00	00	00	00	00
+# Write MARGIN_CONFIG [MFR 37,Rail #1] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	00
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #2] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	01
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #3] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	02
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #4] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	03
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #5] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	04
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #6] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	05
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #7] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	06
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #8] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	07
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #9] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	08
+I2CWrite	D0	F5	00
+# Write MARGIN_CONFIG [MFR 37,Rail #10] Mode: Disabled; Increase Duty Cycle decreases Voltage; Ignore Faults: False; PWM Pin: ID 0, # 10 FPWM1_GPIO5
+I2CWrite	D0	00	09
+I2CWrite	D0	F5	00
+# Write GPIO_CONFIG_0 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	00
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_1 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	01
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_2 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	02
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_3 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	03
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_4 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	04
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_5 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	05
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_6 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	06
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_7 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: False
+I2CWrite	D0	FA	07
+I2CWrite	D0	FB	00
+# Write GPIO_CONFIG_8 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	08
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_9 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	09
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_10 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0A
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_11 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0B
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_12 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0C
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_13 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0D
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_14 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0E
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_15 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	0F
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_16 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	10
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_17 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	11
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_18 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	12
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_19 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	13
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_20 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	14
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_21 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	15
+I2CWrite	D0	FB	08
+# Write GPIO_CONFIG_22 [MFR 43] Enable: False; Out_Enable: False; Out_Value: False; Status: True
+I2CWrite	D0	FA	16
+I2CWrite	D0	FB	08
+# Write LOGGED_FAULT_DETAIL_ENABLES [MFR 31] Common: LOG_NOT_EMPTY,SYSTEM_WATCHDOG_TIMEOUT,RESEQUENCE_ERROR,WATCHDOG_TIMEOUT,RESERVED4,RESERVED5,RESERVED6,RESERVED7; GPI: #1,2,3,4,5,6,7,8; Rail #1: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #2: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #3: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #4: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #5: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #6: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #7: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #8: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #9: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT; Rail #10: VOUT_OV,VOUT_UV,TON_MAX,IOUT_OC,IOUT_UC,TEMPERATURE_OT,SEQ_ON_TIMEOUT,SEQ_OFF_TIMEOUT
+I2CWrite	D0	EF	0C	FF	FF	FF	FF	FF	FF	FF	FF	FF	FF	FF	FF
+# Write MFR_DATE 130813
+I2CWrite	D0	9D	06	31	33	30	38	31	33
+# Write MFR_ID MFR_ID
+I2CWrite	D0	99	06	4D	46	52	5F	49	44
+# Write MFR_LOCATION TAIWAN
+I2CWrite	D0	9C	06	54	41	49	57	41	4E
+# Write MFR_MODEL DSPM8305E
+I2CWrite	D0	9A	09	44	53	50	4D	38	33	30	35	45
+# Write MFR_REVISION 104_A04
+I2CWrite	D0	9B	07	31	30	34	5F	41	30	34
+# Write MFR_SERIAL 000000
+I2CWrite	D0	9E	06	30	30	30	30	30	30
+# Write MISC_CONFIG [MFR 44] Time Between Resequences: 0 msec; Resequence Abort: no; Max Resequences: 1; FIFO Mode: Disabled; Brownout Enable: no
+I2CWrite	D0	FC	02	00	00
+# Write PIN_SELECTED_RAIL_STATES [MFR 13] State 0: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 1: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 2: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 3: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 4: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 5: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 6: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off; State 7: Enabled=No, Turn Off Mode=ImmediateOff, Rails States= Rail #1 Off, Rail #2 Off, Rail #3 Off, Rail #4 Off, Rail #5 Off, Rail #6 Off, Rail #7 Off, Rail #8 Off, Rail #9 Off, Rail #10 Off
+I2CWrite	D0	DD	12	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write RESET_COUNT [MFR 12] 0 
+I2CWrite	D0	DC	00	00
+# Write RUN_TIME_CLOCK_TRIM [MFR 08] 0.00 %
+I2CWrite	D0	D8	00	88
+# Write SECURITY_BIT_MASK [MFR 34] No commands write protected
+I2CWrite	D0	F2	20	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00
+# Write SYSTEM_RESET_CONFIG [MFR 02] Disabled
+I2CWrite	D0	D2	09	00	00	00	00	00	00	00	00	00
+# Write SYSTEM_WATCHDOG_CONFIG [MFR 03] Disabled
+I2CWrite	D0	D3	04	00	00	00	00
+# Write ON_OFF_CONFIG [Rail #1] Mode: Always Converting
+I2CWrite	D0	00	00
+I2CWrite	D0	02	02
+# Write FAULT_RESPONSES [MFR 25,Rail #1] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #1] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #1] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #1] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #1] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #1] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #1] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #1] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #1] 2.805 V
+I2CWrite	D0	5F	E1	2C
+# Write POWER_GOOD_ON [Rail #1] 2.970 V
+I2CWrite	D0	5E	85	2F
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #1] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #1] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #1] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #1] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #1] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #1] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #1] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #1] 3.300 V
+I2CWrite	D0	21	CC	34
+# Write VOUT_MARGIN_HIGH [Rail #1] 3.465 V
+I2CWrite	D0	25	70	37
+# Write VOUT_MARGIN_LOW [Rail #1] 3.135 V
+I2CWrite	D0	26	28	32
+# Write VOUT_OV_FAULT_LIMIT [Rail #1] 3.795 V
+I2CWrite	D0	40	B8	3C
+# Write VOUT_OV_WARN_LIMIT [Rail #1] 3.630 V
+I2CWrite	D0	42	14	3A
+# Write VOUT_SCALE_MONITOR [Rail #1] 0.600 
+I2CWrite	D0	2A	66	B2
+# Write VOUT_UV_FAULT_LIMIT [Rail #1] 2.805 V
+I2CWrite	D0	44	E1	2C
+# Write VOUT_UV_WARN_LIMIT [Rail #1] 2.970 V
+I2CWrite	D0	43	85	2F
+# Write ON_OFF_CONFIG [Rail #2] Mode: Always Converting
+I2CWrite	D0	00	01
+I2CWrite	D0	02	02
+# Write FAULT_RESPONSES [MFR 25,Rail #2] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #2] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #2] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #2] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #2] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #2] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #2] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #2] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #2] 1.020 V
+I2CWrite	D0	5F	47	41
+# Write POWER_GOOD_ON [Rail #2] 1.080 V
+I2CWrite	D0	5E	1E	45
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #2] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #2] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #2] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #2] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #2] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #2] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #2] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #2] 1.200 V
+I2CWrite	D0	21	CC	4C
+# Write VOUT_MARGIN_HIGH [Rail #2] 1.260 V
+I2CWrite	D0	25	A3	50
+# Write VOUT_MARGIN_LOW [Rail #2] 1.140 V
+I2CWrite	D0	26	F5	48
+# Write VOUT_OV_FAULT_LIMIT [Rail #2] 1.380 V
+I2CWrite	D0	40	51	58
+# Write VOUT_OV_WARN_LIMIT [Rail #2] 1.320 V
+I2CWrite	D0	42	7A	54
+# Write VOUT_SCALE_MONITOR [Rail #2] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #2] 1.020 V
+I2CWrite	D0	44	47	41
+# Write VOUT_UV_WARN_LIMIT [Rail #2] 1.080 V
+I2CWrite	D0	43	1E	45
+# Write ON_OFF_CONFIG [Rail #3] Mode: Always Converting
+I2CWrite	D0	00	02
+I2CWrite	D0	02	02
+# Write FAULT_RESPONSES [MFR 25,Rail #3] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #3] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #3] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #3] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #3] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #3] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #3] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #3] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #3] 2.125 V
+I2CWrite	D0	5F	00	44
+# Write POWER_GOOD_ON [Rail #3] 2.250 V
+I2CWrite	D0	5E	00	48
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #3] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #3] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #3] 20.0 ms
+I2CWrite	D0	64	80	DA
+# Write TOFF_MAX_WARN_LIMIT [Rail #3] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #3] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #3] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #3] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #3] 2.500 V
+I2CWrite	D0	21	00	50
+# Write VOUT_MARGIN_HIGH [Rail #3] 2.625 V
+I2CWrite	D0	25	00	54
+# Write VOUT_MARGIN_LOW [Rail #3] 2.375 V
+I2CWrite	D0	26	00	4C
+# Write VOUT_OV_FAULT_LIMIT [Rail #3] 2.875 V
+I2CWrite	D0	40	00	5C
+# Write VOUT_OV_WARN_LIMIT [Rail #3] 2.750 V
+I2CWrite	D0	42	00	58
+# Write VOUT_SCALE_MONITOR [Rail #3] 0.800 
+I2CWrite	D0	2A	33	B3
+# Write VOUT_UV_FAULT_LIMIT [Rail #3] 2.125 V
+I2CWrite	D0	44	00	44
+# Write VOUT_UV_WARN_LIMIT [Rail #3] 2.250 V
+I2CWrite	D0	43	00	48
+# Write ON_OFF_CONFIG [Rail #4] Mode: Always Converting
+I2CWrite	D0	00	03
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #4] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #4] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #4] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #4] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #4] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #4] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #4] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #4] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #4] 1.700 V
+I2CWrite	D0	5F	66	36
+# Write POWER_GOOD_ON [Rail #4] 1.800 V
+I2CWrite	D0	5E	99	39
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #4] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #4] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #4] 20.0 ms
+I2CWrite	D0	64	80	DA
+# Write TOFF_MAX_WARN_LIMIT [Rail #4] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #4] 42.0 ms
+I2CWrite	D0	60	A0	E2
+# Write TON_MAX_FAULT_LIMIT [Rail #4] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #4] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #4] 2.000 V
+I2CWrite	D0	21	00	40
+# Write VOUT_MARGIN_HIGH [Rail #4] 2.100 V
+I2CWrite	D0	25	33	43
+# Write VOUT_MARGIN_LOW [Rail #4] 1.900 V
+I2CWrite	D0	26	CC	3C
+# Write VOUT_OV_FAULT_LIMIT [Rail #4] 2.300 V
+I2CWrite	D0	40	99	49
+# Write VOUT_OV_WARN_LIMIT [Rail #4] 2.200 V
+I2CWrite	D0	42	66	46
+# Write VOUT_SCALE_MONITOR [Rail #4] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #4] 1.700 V
+I2CWrite	D0	44	66	36
+# Write VOUT_UV_WARN_LIMIT [Rail #4] 1.800 V
+I2CWrite	D0	43	99	39
+# Write ON_OFF_CONFIG [Rail #5] Mode: Always Converting
+I2CWrite	D0	00	04
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #5] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #5] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #5] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #5] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #5] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #5] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #5] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #5] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #5] 1.700 V
+I2CWrite	D0	5F	66	36
+# Write POWER_GOOD_ON [Rail #5] 1.800 V
+I2CWrite	D0	5E	99	39
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #5] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #5] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #5] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #5] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #5] 40.0 ms
+I2CWrite	D0	60	80	E2
+# Write TON_MAX_FAULT_LIMIT [Rail #5] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #5] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #5] 2.000 V
+I2CWrite	D0	21	00	40
+# Write VOUT_MARGIN_HIGH [Rail #5] 2.100 V
+I2CWrite	D0	25	33	43
+# Write VOUT_MARGIN_LOW [Rail #5] 1.900 V
+I2CWrite	D0	26	CC	3C
+# Write VOUT_OV_FAULT_LIMIT [Rail #5] 2.300 V
+I2CWrite	D0	40	99	49
+# Write VOUT_OV_WARN_LIMIT [Rail #5] 2.200 V
+I2CWrite	D0	42	66	46
+# Write VOUT_SCALE_MONITOR [Rail #5] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #5] 1.700 V
+I2CWrite	D0	44	66	36
+# Write VOUT_UV_WARN_LIMIT [Rail #5] 1.800 V
+I2CWrite	D0	43	99	39
+# Write ON_OFF_CONFIG [Rail #6] Mode: Always Converting
+I2CWrite	D0	00	05
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #6] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #6] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #6] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #6] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #6] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #6] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #6] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #6] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #6] 0.638 V
+I2CWrite	D0	5F	D4	28
+# Write POWER_GOOD_ON [Rail #6] 0.675 V
+I2CWrite	D0	5E	33	2B
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #6] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #6] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #6] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #6] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #6] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #6] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #6] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #6] 0.750 V
+I2CWrite	D0	21	00	30
+# Write VOUT_MARGIN_HIGH [Rail #6] 0.788 V
+I2CWrite	D0	25	6E	32
+# Write VOUT_MARGIN_LOW [Rail #6] 0.712 V
+I2CWrite	D0	26	91	2D
+# Write VOUT_OV_FAULT_LIMIT [Rail #6] 0.862 V
+I2CWrite	D0	40	2B	37
+# Write VOUT_OV_WARN_LIMIT [Rail #6] 0.825 V
+I2CWrite	D0	42	CC	34
+# Write VOUT_SCALE_MONITOR [Rail #6] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #6] 0.638 V
+I2CWrite	D0	44	D4	28
+# Write VOUT_UV_WARN_LIMIT [Rail #6] 0.675 V
+I2CWrite	D0	43	33	2B
+# Write ON_OFF_CONFIG [Rail #7] Mode: Always Converting
+I2CWrite	D0	00	06
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #7] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #7] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #7] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #7] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #7] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #7] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #7] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #7] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #7] 0.638 V
+I2CWrite	D0	5F	D4	28
+# Write POWER_GOOD_ON [Rail #7] 0.675 V
+I2CWrite	D0	5E	33	2B
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #7] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #7] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #7] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #7] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #7] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #7] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #7] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #7] 0.750 V
+I2CWrite	D0	21	00	30
+# Write VOUT_MARGIN_HIGH [Rail #7] 0.788 V
+I2CWrite	D0	25	6E	32
+# Write VOUT_MARGIN_LOW [Rail #7] 0.712 V
+I2CWrite	D0	26	91	2D
+# Write VOUT_OV_FAULT_LIMIT [Rail #7] 0.862 V
+I2CWrite	D0	40	2B	37
+# Write VOUT_OV_WARN_LIMIT [Rail #7] 0.825 V
+I2CWrite	D0	42	CC	34
+# Write VOUT_SCALE_MONITOR [Rail #7] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #7] 0.638 V
+I2CWrite	D0	44	D4	28
+# Write VOUT_UV_WARN_LIMIT [Rail #7] 0.675 V
+I2CWrite	D0	43	33	2B
+# Write ON_OFF_CONFIG [Rail #8] Mode: Always Converting
+I2CWrite	D0	00	07
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #8] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #8] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #8] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #8] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #8] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #8] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #8] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #8] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #8] 4.250 V
+I2CWrite	D0	5F	00	22
+# Write POWER_GOOD_ON [Rail #8] 4.500 V
+I2CWrite	D0	5E	00	24
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #8] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #8] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #8] 5.0 ms
+I2CWrite	D0	64	80	CA
+# Write TOFF_MAX_WARN_LIMIT [Rail #8] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #8] 5.0 ms
+I2CWrite	D0	60	80	CA
+# Write TON_MAX_FAULT_LIMIT [Rail #8] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #8] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #8] 5.000 V
+I2CWrite	D0	21	00	28
+# Write VOUT_MARGIN_HIGH [Rail #8] 5.250 V
+I2CWrite	D0	25	00	2A
+# Write VOUT_MARGIN_LOW [Rail #8] 4.750 V
+I2CWrite	D0	26	00	26
+# Write VOUT_OV_FAULT_LIMIT [Rail #8] 6.500 V
+I2CWrite	D0	40	00	34
+# Write VOUT_OV_WARN_LIMIT [Rail #8] 5.500 V
+I2CWrite	D0	42	00	2C
+# Write VOUT_SCALE_MONITOR [Rail #8] 0.400 
+I2CWrite	D0	2A	33	AB
+# Write VOUT_UV_FAULT_LIMIT [Rail #8] 3.500 V
+I2CWrite	D0	44	00	1C
+# Write VOUT_UV_WARN_LIMIT [Rail #8] 4.500 V
+I2CWrite	D0	43	00	24
+# Write ON_OFF_CONFIG [Rail #9] Mode: Always Converting
+I2CWrite	D0	00	08
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #9] Retry Time: 10 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Shut down immediately; Restart: Restart up to 1 times| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	81	81	00	00	00	00	0A	00	00
+# Write IOUT_CAL_GAIN [Rail #9] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #9] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #9] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #9] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #9] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #9] 255 C
+I2CWrite	D0	4F	FC	F3
+# Write OT_WARN_LIMIT [Rail #9] 255 C
+I2CWrite	D0	51	FC	F3
+# Write POWER_GOOD_OFF [Rail #9] 1.530 V
+I2CWrite	D0	5F	F5	30
+# Write POWER_GOOD_ON [Rail #9] 1.620 V
+I2CWrite	D0	5E	D7	33
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #9] 100.0 C/V
+I2CWrite	D0	E4	20	EB
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #9] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #9] 0.0 ms
+I2CWrite	D0	64	00	80
+# Write TOFF_MAX_WARN_LIMIT [Rail #9] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #9] 37.0 ms
+I2CWrite	D0	60	50	E2
+# Write TON_MAX_FAULT_LIMIT [Rail #9] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #9] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #9] 1.800 V
+I2CWrite	D0	21	99	39
+# Write VOUT_MARGIN_HIGH [Rail #9] 1.890 V
+I2CWrite	D0	25	7A	3C
+# Write VOUT_MARGIN_LOW [Rail #9] 1.710 V
+I2CWrite	D0	26	B8	36
+# Write VOUT_OV_FAULT_LIMIT [Rail #9] 2.070 V
+I2CWrite	D0	40	3D	42
+# Write VOUT_OV_WARN_LIMIT [Rail #9] 1.980 V
+I2CWrite	D0	42	5C	3F
+# Write VOUT_SCALE_MONITOR [Rail #9] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #9] 1.530 V
+I2CWrite	D0	44	F5	30
+# Write VOUT_UV_WARN_LIMIT [Rail #9] 1.620 V
+I2CWrite	D0	43	D7	33
+# Write ON_OFF_CONFIG [Rail #10] Mode: Always Converting
+I2CWrite	D0	00	09
+I2CWrite	D0	02	00
+# Write FAULT_RESPONSES [MFR 25,Rail #10] Retry Time: 0 msec| Max Volt Glitch Time: 0.0 msec| Max Other Glitch Time: 0 msec| VOUT_OV: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| VOUT_UV: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_OC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| IOUT_UC: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| OT: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A| TON_MAX: Resequence: Disabled; Glitch filter: Disabled; Response: Ignore; Restart: N/A
+I2CWrite	D0	E9	09	00	00	00	00	00	00	00	00	00
+# Write IOUT_CAL_GAIN [Rail #10] 10.0 mohm
+I2CWrite	D0	38	80	D2
+# Write IOUT_CAL_OFFSET [Rail #10] 0.000000 A
+I2CWrite	D0	39	00	80
+# Write IOUT_OC_FAULT_LIMIT [Rail #10] 0.000 A
+I2CWrite	D0	46	00	80
+# Write IOUT_OC_WARN_LIMIT [Rail #10] 0.000 A
+I2CWrite	D0	4A	00	80
+# Write IOUT_UC_FAULT_LIMIT [Rail #10] 0.000 A
+I2CWrite	D0	4B	00	80
+# Write OT_FAULT_LIMIT [Rail #10] 60 C
+I2CWrite	D0	4F	C0	E3
+# Write OT_WARN_LIMIT [Rail #10] 50 C
+I2CWrite	D0	51	20	E3
+# Write POWER_GOOD_OFF [Rail #10] 0.000 V
+I2CWrite	D0	5F	00	00
+# Write POWER_GOOD_ON [Rail #10] 0.000 V
+I2CWrite	D0	5E	00	00
+# Write TEMPERATURE_CAL_GAIN [MFR 20,Rail #10] 50.0 C/V
+I2CWrite	D0	E4	20	E3
+# Write TEMPERATURE_CAL_OFFSET [MFR 21,Rail #10] 0.00 C
+I2CWrite	D0	E5	00	80
+# Write TOFF_DELAY [Rail #10] 0.0 ms
+I2CWrite	D0	64	00	80
+# Write TOFF_MAX_WARN_LIMIT [Rail #10] <No Limit>
+I2CWrite	D0	66	FF	7F
+# Write TON_DELAY [Rail #10] 0.0 ms
+I2CWrite	D0	60	00	80
+# Write TON_MAX_FAULT_LIMIT [Rail #10] <No Limit>
+I2CWrite	D0	62	00	80
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #10] 0.000 V
+I2CWrite	D0	D1	00	00
+# Write VOUT_COMMAND [Rail #10] 0.000 V
+I2CWrite	D0	21	00	00
+# Write VOUT_MARGIN_HIGH [Rail #10] 0.000 V
+I2CWrite	D0	25	00	00
+# Write VOUT_MARGIN_LOW [Rail #10] 0.000 V
+I2CWrite	D0	26	00	00
+# Write VOUT_OV_FAULT_LIMIT [Rail #10] 0.000 V
+I2CWrite	D0	40	00	00
+# Write VOUT_OV_WARN_LIMIT [Rail #10] 0.000 V
+I2CWrite	D0	42	00	00
+# Write VOUT_SCALE_MONITOR [Rail #10] 1.000 
+I2CWrite	D0	2A	00	BA
+# Write VOUT_UV_FAULT_LIMIT [Rail #10] 0.000 V
+I2CWrite	D0	44	00	00
+# Write VOUT_UV_WARN_LIMIT [Rail #10] 0.000 V
+I2CWrite	D0	43	00	00
+# Store configuration to data flash
+# Execute STORE_DEFAULT_ALL
+I2CWrite	D0	11
+Pause	2000	Pausing 2,000.00 ms for Worse case flash store time

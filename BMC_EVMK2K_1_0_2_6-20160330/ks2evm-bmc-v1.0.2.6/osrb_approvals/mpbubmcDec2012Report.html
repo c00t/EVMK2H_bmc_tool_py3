@@ -1,0 +1,15759 @@
+
+
+
+
+
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <title>mpbu bmc Dec 2012 Report</title>
+    <style type="text/css">
+        body { font-family: Verdana, Arial, Helvetica, serif; font-size: 0.65em; }
+        table,tr,td,th { font-size: 1.0em;  }
+        table { border-collapse: collapse; margin-top: 20px; margin-bottom: 20px; mso-padding-alt:0in 0in 0in 0in ; }
+        td { padding-left: 5px; padding-right: 5px; padding-top: 2px; padding-bottom: 2px; }
+        th { padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; }
+        i { background-color: #FFFEAE; }
+        #topDisclaimerTable { width: 80%; margin-left: 10%; margin-bottom: 60px; }
+        #topDisclaimerTable td { border: 0px; font-size: 1.20em; }
+        #bottomDisclaimerTable { width: 80%; margin-left: 10%; margin-top: 60px; }
+        #bottomDisclaimerTable td { border: 0px; font-size: 1.20em; }
+        #bottomNoticeTable { width: 80%; margin-left: 10%; margin-top: 30px; }
+        #bottomNoticeTable td { border: 0px; font-size: 1.20em; }
+        .reportHeader { width: 100%; text-align: center; }
+        .associatedResources { width: 100%; text-align: center; }
+        .documentLink { width: 100%; text-align: center; }
+        .redBack { background-color: #FF9596 }
+        .greenBack { background-color: #B8FBB8 }
+        .yellowBack { background-color: #FFFF99 }
+        td { word-wrap: break-word; border: 1px solid #B1BCD0; color: #000000; }
+        th { border: 1px solid #7C8EA2; color: #FFFFFF; background-color: #6C7E92; }
+    </style>
+</head>
+<body>
+    <table border='0' cellspacing='1' cellpadding='2' id='topDisclaimerTable'>
+        <tbody>
+<tr >
+    <td style='font-weight: bold;'>
+Confidential
+</td>
+    <td align='right' style='font-weight: bold;'>
+For Internal Use Only
+</td>
+</tr>
+<tr >
+    <td valign='top' style='font-weight: bold;'>
+DISCLAIMER:
+</td>
+    <td >
+This report was created using Black Duck(TM) Protex software compliance management products and services. The results contained in the report reflect the user's analysis and decision making. Recipient of the results bears all of the risks relating to use of, or reliance upon, such results or any other content contained in this report. Black Duck Software makes no representation or warranty to any party regarding the contents of this report, its accuracy, completeness or correctness, and Black Duck Software hereby disclaims any and all warranties (both express and implied) with respect thereto.
+</td>
+</tr>
+        </tbody>
+    </table>
+<div class='reportHeader'><h1>mpbu bmc Dec 2012 Report</h1></div>
+<div class='reportHeader'><h4>December 12, 2012  10:39 AM</h4></div>
+<table border='0' cellspacing='0' cellpadding='0' width='100%' style='font-weight: bold;' >
+    <thead>
+        <tr>
+            <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.30em; text-align: left;'><a name="TableOfContents">Table Of Contents</a></td>
+        </tr>
+        <tr>
+            <td valign='top' align='center' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>&#160;</td>
+        </tr>
+    </thead>
+    <tbody>
+<tr >
+    <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>
+<a href="#Summary">Summary</a>
+</td>
+</tr>
+<tr >
+    <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>
+<a href="#Analysis Summary">Analysis Summary</a>
+</td>
+</tr>
+<tr >
+    <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>
+<a href="#Bill of Materials">Bill of Materials</a>
+</td>
+</tr>
+<tr >
+    <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>
+<a href="#File Name Patterns Flagged as Pending Id">File Name Patterns Flagged as Pending Id</a>
+</td>
+</tr>
+<tr >
+    <td valign='center' align='left' style='border: 0px; height: 20px; font-size: 1.20em; text-align: left;'>
+<a href="#Code Matches - Precision">Code Matches - Precision</a>
+</td>
+</tr>
+    </tbody>
+</table>
+<br />
+<br /><br />
+<table border='0' cellspacing='0' cellpadding='0' style="clear: both; display: block; width: 95%;">
+<tr>
+    <td nowrap="nowrap" valign="middle" style="border: 0px; height: 30px; font-size: 1.30em; text-align: left;">
+        <a href="#TableOfContents">Top</a>
+        <a name="Summary"> </a>
+    </td>
+</tr>
+</table>
+<table border='0' cellspacing='0' cellpadding='0' class='reportTable' style="clear: both; display: block; width: 95%;">
+    <thead>
+        <tr>
+            <th nowrap="nowrap" colspan="2" valign="middle" style="border: 0px; background-color: #DBE2EA; color: #376297; height: 30px; font-size: 1.30em; text-align: left;">
+Summary
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Name:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+mpbu bmc Dec 2012
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Project Creator:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+Jack Manbeck
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+License:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+BSD 2.0
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Description:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Number of Files:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+38
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Files Pending Identification:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+2 (5.26%)
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Files with Violations:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+0 (0.00%)
+</td>
+</tr>
+<tr >
+    <td valign='top' nowrap='nowrap' style='font-weight: bold; text-align: right; padding-right: 20px; border: 0px; font-size: 1.20em;'>
+Server:
+</td>
+    <td style='border: 0px; font-size: 1.20em;'>
+dflblackduck01.dal.design.ti.com
+</td>
+</tr>
+    </tbody>
+</table>
+<br />
+<br /><br /><br />
+<table border='0' cellspacing='0' cellpadding='0' style="clear: both; display: block; width: 95%;">
+<tr>
+    <td nowrap="nowrap" valign="middle" style="border: 0px; height: 30px; font-size: 1.30em; text-align: left;">
+        <a href="#TableOfContents">Top</a>
+        <a name="Analysis Summary"> </a>
+    </td>
+</tr>
+</table>
+<table border='0' cellspacing='0' cellpadding='0' class='reportTable' style="clear: both; display: block; width: 95%;">
+    <thead>
+        <tr>
+            <th nowrap="nowrap" colspan="3" valign="middle" style="border: 0px; background-color: #DBE2EA; color: #376297; height: 30px; font-size: 1.30em; text-align: left;">
+Analysis Summary
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Last Updated:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+December 12, 2012  10:39 AM
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Scan Started:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+December 10, 2012  02:05 PM
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Scan Finished:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+December 10, 2012  02:06 PM
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Files analyzed:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+38 Files
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Bytes analyzed:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+264 KiB (270,400  bytes)
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Files skipped:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+   0 Files
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Bytes skipped:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+   0 Bytes
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analysis Release Description:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+Product version 6.1.2 KB update 79, custom codeprints modified June 04, 2012 10:22 AM
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analyzed From Host:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+GTLA0850427.am.dhcp.ti.com
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analyzed By:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+a0850427 (j-manbeck2@ti.com)
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analyzed With OS:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+Windows XP
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analyzed With Locale:
+</td>
+    <td colspan='2' style='border: 0px; font-size: 1.20em;'>
+en-US
+</td>
+</tr>
+<tr >
+    <td nowrap='nowrap' style='white-space: nowrap; font-weight: bold; text-align: right; padding-right: 20px; border: 0px; vertical-align: top; font-size: 1.20em;'>
+Analyzed With Options:
+</td>
+    <td style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+File Matches -
+</td>
+    <td style='border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Snippet Matches -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Snippet Match Sensitivity -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+8 - Default
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Java Import Statements -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Java Package Statements -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Binary Dependencies -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+String Searches -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Allow wild cards (*) in string search queries -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Allow regular expression search queries -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+No
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Decompress Compressed Files -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Expand Archive Files -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Enable Multi-User File Comparison -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+No
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Store non-precision matches -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+Yes
+</td>
+</tr>
+<tr >
+    <td colspan='2' style='white-space: nowrap; text-align: right; border: 0px; font-size: 1.20em;'>
+Enable Rapid Identification -
+</td>
+    <td style='width: 100%; border: 0px; font-size: 1.20em; padding-left: 0px;'>
+No
+</td>
+</tr>
+    </tbody>
+</table>
+<br />
+<br /><br /><br />
+<table border='0' cellspacing='0' cellpadding='0' style="clear: both; display: block; width: 95%;">
+<tr>
+    <td nowrap="nowrap" valign="middle" style="border: 0px; height: 30px; font-size: 1.30em; text-align: left;">
+        <a href="#TableOfContents">Top</a>
+        <a name="Bill of Materials"> </a>
+    </td>
+</tr>
+</table>
+<table border='0' cellspacing='0' cellpadding='0' class='reportTable' style="clear: both; display: block; width: 95%;">
+    <thead>
+        <tr>
+            <th nowrap="nowrap" colspan="14" valign="middle" style="border: 0px; background-color: #DBE2EA; color: #376297; height: 30px; font-size: 1.30em; text-align: left;">
+Bill of Materials
+            </th>
+        </tr>
+        <tr style="font-size: 1.10em;">
+            <th nowrap="nowrap">Approval Status</th>
+            <th nowrap="nowrap">License Conflict</th>
+            <th nowrap="nowrap">Component</th>
+            <th nowrap="nowrap">Version</th>
+            <th nowrap="nowrap">Home Page</th>
+            <th nowrap="nowrap">Component Comment</th>
+            <th nowrap="nowrap">License</th>
+            <th nowrap="nowrap">Usage</th>
+            <th nowrap="nowrap">Ship Status</th>
+            <th nowrap="nowrap"># Manual Code Match</th>
+            <th nowrap="nowrap"># Rapid ID Code Match</th>
+            <th nowrap="nowrap"># Manual Depends</th>
+            <th nowrap="nowrap"># Manual Search</th>
+            <th nowrap="nowrap">Used By</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr >
+    <td style='text-align: center;'>
+N/A
+</td>
+    <td style='text-align: center;'>
+N/A
+</td>
+    <td nowrap='nowrap' style='font-style: italic;'>
+<a name="BOM_c_mpbubmcdec2012_5056_Unspecified">mpbu bmc Dec 2012</a>
+</td>
+    <td nowrap='nowrap'>
+Unspecified
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Original Code
+</td>
+    <td >
+Ship
+</td>
+    <td >
+17
+</td>
+    <td >
+0
+</td>
+    <td >
+0
+</td>
+    <td >
+0
+</td>
+    <td nowrap='nowrap'>
+<a name="BOM_"></a>
+</td>
+</tr>
+    </tbody>
+</table>
+<br />
+<br /><br /><br />
+<table border='0' cellspacing='0' cellpadding='0' style="clear: both; display: block; width: 95%;">
+<tr>
+    <td nowrap="nowrap" valign="middle" style="border: 0px; height: 30px; font-size: 1.30em; text-align: left;">
+        <a href="#TableOfContents">Top</a>
+        <a name="File Name Patterns Flagged as Pending Id"> </a>
+    </td>
+</tr>
+</table>
+<table border='0' cellspacing='0' cellpadding='0' class='reportTable' style="clear: both; display: block; width: 95%;">
+    <thead>
+        <tr>
+            <th nowrap="nowrap" colspan="3" valign="middle" style="border: 0px; background-color: #DBE2EA; color: #376297; height: 30px; font-size: 1.30em; text-align: left;">
+File Name Patterns Flagged as Pending Id
+            </th>
+        </tr>
+        <tr style="font-size: 1.10em;">
+            <th nowrap="nowrap">Full Path</th>
+            <th nowrap="nowrap">Type</th>
+            <th nowrap="nowrap">File/Folder Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr bgcolor="#F5F5F5">
+    <td colspan='3'>This project does not have any file name patterns flagged as pending id.</td>
+</tr>
+    </tbody>
+</table>
+<br />
+<br /><br /><br />
+<table border='0' cellspacing='0' cellpadding='0' style="clear: both; display: block; width: 95%;">
+<tr>
+    <td nowrap="nowrap" valign="middle" style="border: 0px; height: 30px; font-size: 1.30em; text-align: left;">
+        <a href="#TableOfContents">Top</a>
+        <a name="Code Matches - Precision"> </a>
+    </td>
+</tr>
+</table>
+<table border='0' cellspacing='0' cellpadding='0' class='reportTable' style="clear: both; display: block; width: 95%;">
+    <thead>
+        <tr>
+            <th nowrap="nowrap" colspan="14" valign="middle" style="border: 0px; background-color: #DBE2EA; color: #376297; height: 30px; font-size: 1.30em; text-align: left;">
+Code Matches - Precision
+            </th>
+        </tr>
+        <tr style="font-size: 1.10em;">
+            <th nowrap="nowrap">File</th>
+            <th nowrap="nowrap">Size</th>
+            <th nowrap="nowrap">File Line</th>
+            <th nowrap="nowrap">Total Lines</th>
+            <th nowrap="nowrap">Component</th>
+            <th nowrap="nowrap">Version</th>
+            <th nowrap="nowrap">License</th>
+            <th nowrap="nowrap">Usage</th>
+            <th nowrap="nowrap">Status</th>
+            <th nowrap="nowrap">%</th>
+            <th nowrap="nowrap">Matched File</th>
+            <th nowrap="nowrap">Matched File Line</th>
+            <th nowrap="nowrap">File Comment</th>
+            <th nowrap="nowrap">Component Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+azurespider
+</td>
+    <td >
+
+</td>
+    <td >
+Apache License Version 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+trunk-20120504-svn.tgz/trunk/os161/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+cs325os
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 3.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+trunk-20120504-svn.tgz/trunk/os161-1.11/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+CSC369
+</td>
+    <td >
+
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+CSC369-master-20101218.tgz/zqureshi-CSC369-9828178/a2/src/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+nmt-cse325-rum
+</td>
+    <td >
+
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+asst2-begin-svn.tgz/asst2-begin/src/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+ntm-cse352-lab
+</td>
+    <td >
+trunk-20120508-svn
+</td>
+    <td >
+MIT License V2
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+trunk-20120508-svn.tgz/trunk/os161/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+ntm-cse352-lab
+</td>
+    <td >
+20090201
+</td>
+    <td >
+MIT License V2
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+svnRepo.tar.bz2/svnRepo/os161/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+os161.11
+</td>
+    <td >
+
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+os161.11-master-20111017.tgz/rsanc77-os161.11-c47b9cb/os161-1.11/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_cmd.c
+</td>
+    <td align='right'>
+32498
+</td>
+    <td align='right'>
+225
+</td>
+    <td align='right'>
+45
+</td>
+    <td >
+sysarch08
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 3.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+2%
+</td>
+    <td >
+trunk-20120707-svn.tgz/trunk/asst1-src/lib/libc/strtok_r.c
+</td>
+    <td >
+21
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+android-vnc-server
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+trunk-20120614-svn.tgz/trunk/LibVNCServer-0.9.7/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+CUWiN Community Wireless Network
+</td>
+    <td >
+0.7.0
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+cuwin-0.7.0-netbsd-src.tgz/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+CUWiN Community Wireless Network
+</td>
+    <td >
+snapshot-20040827
+</td>
+    <td >
+BSD 1.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+snapshot-20040827-nbsd.tar.gz/nbsd/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r200
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r200.tar.gz/kame-kame-3de17b9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001017a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001017a.tar.gz/kame-kame-ed2b2be/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001106a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001106a.tar.gz/kame-kame-c8aeabc/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap19991008
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap19991008.tar.gz/kame-kame-951ea33/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000716a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000716a.tar.gz/kame-kame-498091a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r36
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r36.tar.gz/kame-kame-3769f49/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000614a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000614a.tar.gz/kame-kame-2da8be0/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000612a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000612a.tar.gz/kame-kame-0bebd6b/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001011a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001011a.tar.gz/kame-kame-97be318/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000612
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000612.tar.gz/kame-kame-63a8b01/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+1_0
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v1_0.tar.gz/kame-kame-185f5b3/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000620a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000620a.tar.gz/kame-kame-3fa30e5/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000731a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000731a.tar.gz/kame-kame-dad7d73/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+990902
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v990902.tar.gz/kame-kame-a95b293/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000923a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000923a.tar.gz/kame-kame-aaecad1/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap19991104
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap19991104.tar.gz/kame-kame-40204d1/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001016a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001016a.tar.gz/kame-kame-2901e2b/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap20010806
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap20010806.tar.gz/kame-kame-3aef249/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+20000417
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v20000417.tar.gz/kame-kame-9166224/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000719a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000719a.tar.gz/kame-kame-c4f124a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+00
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v00.tar.gz/kame-kame-be9a383/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000705a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000705a.tar.gz/kame-kame-646daed/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001010a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001010a.tar.gz/kame-kame-03f4568/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+102
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v102.tar.gz/kame-kame-1dd87e4/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+2_4
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v2_4.tar.gz/kame-kame-d1bf839/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000718a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000718a.tar.gz/kame-kame-6aa5b0d/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000913b
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000913b.tar.gz/kame-kame-eee7c10/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001111a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001111a.tar.gz/kame-kame-430da84/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r35
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r35.tar.gz/kame-kame-e5d3946/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001017b
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001017b.tar.gz/kame-kame-e6723fe/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+1_0_0_b1
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v1_0_0_b1.tar.gz/kame-kame-7c3cc2f/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap19990809
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap19990809.tar.gz/kame-kame-a0d9273/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000701a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000701a.tar.gz/kame-kame-209de6b/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r34
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r34.tar.gz/kame-kame-ee17df6/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+s19990805
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-s19990805.tar.gz/kame-kame-4301161/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+3_8_3
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v3_8_3.tar.gz/kame-kame-dd47fb4/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+15
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v15.tar.gz/kame-kame-3a51df7/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+12
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v12.tar.gz/kame-kame-cab81bc/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap19991105
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap19991105.tar.gz/kame-kame-91f87a7/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001004a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001004a.tar.gz/kame-kame-71c1fda/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+0_8
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v0_8.tar.gz/kame-kame-7dea550/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+s19991007
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-s19991007.tar.gz/kame-kame-b08b728/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+round2_optc
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-round2_optc.tar.gz/kame-kame-c43b1a7/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20000912a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20000912a.tar.gz/kame-kame-97a179a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_19990913
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_19990913.tar.gz/kame-kame-f427e1a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20000327
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20000327.tar.gz/kame-kame-3df344e/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_stable_20000425
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_stable_20000425.tar.gz/kame-kame-9df760d/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_19990920
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_19990920.tar.gz/kame-kame-df861b3/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+openbsd_snap_20000228
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-openbsd_snap_20000228.tar.gz/kame-kame-fef0ee6/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20000403
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20000403.tar.gz/kame-kame-dc94b50/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000619
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000619.tar.gz/kame-kame-0aaa10d/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000424
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000424.tar.gz/kame-kame-ecdddcc/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+import20000307
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-import20000307.tar.gz/kame-kame-ec94206/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+import010107
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-import010107.tar.gz/kame-kame-4512172/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000207
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000207.tar.gz/kame-kame-8b02c49/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20000703
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20000703.tar.gz/kame-kame-c81910a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20000410
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20000410.tar.gz/kame-kame-dc47b5e/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20001127
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20001127.tar.gz/kame-kame-c527453/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20000904
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20000904.tar.gz/kame-kame-b6c43e4/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20001016
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20001016.tar.gz/kame-kame-e1c42d8/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_stable_19991213
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_stable_19991213.tar.gz/kame-kame-f68528a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r33
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r33.tar.gz/kame-kame-02dfb0a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000110
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000110.tar.gz/kame-kame-e10ba50/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000508
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000508.tar.gz/kame-kame-8a161ae/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r26
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r26.tar.gz/kame-kame-7e2df16/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000320
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000320.tar.gz/kame-kame-7fec839/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_stable_19991012
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_stable_19991012.tar.gz/kame-kame-badf285/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000214
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000214.tar.gz/kame-kame-ce660ab/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20000613
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20000613.tar.gz/kame-kame-bb1dbcc/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+openbsd_snap_20000327
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-openbsd_snap_20000327.tar.gz/kame-kame-61106a4/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_19991206
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_19991206.tar.gz/kame-kame-ed525bf/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20001016
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20001016.tar.gz/kame-kame-3883503/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000327
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000327.tar.gz/kame-kame-f5e0f30/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20000515
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20000515.tar.gz/kame-kame-5a692c5/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20001023
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20001023.tar.gz/kame-kame-ee35153/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_19991004
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_19991004.tar.gz/kame-kame-bd33ace/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000904
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000904.tar.gz/kame-kame-0da35fe/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20001113
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20001113.tar.gz/kame-kame-cede183/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_19991227
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_19991227.tar.gz/kame-kame-379b22d/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_19991227
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_19991227.tar.gz/kame-kame-8c805bc/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_19991122
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_19991122.tar.gz/kame-kame-acf3b60/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_19990913
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_19990913.tar.gz/kame-kame-837ecad/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000417
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000417.tar.gz/kame-kame-36ca465/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+cur19991029
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-cur19991029.tar.gz/kame-kame-3edf708/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_19991101
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_19991101.tar.gz/kame-kame-92d1e39/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20000904
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20000904.tar.gz/kame-kame-c507eba/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20001120
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20001120.tar.gz/kame-kame-6f7e536/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_19991011
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_19991011.tar.gz/kame-kame-f0644f1/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20000717
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20000717.tar.gz/kame-kame-7133ef0/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20000515
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20000515.tar.gz/kame-kame-95fc7da/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20000710
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20000710.tar.gz/kame-kame-6949621/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd2_snap_20000612
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd2_snap_20000612.tar.gz/kame-kame-857242a/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi4_snap_19991229
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi4_snap_19991229.tar.gz/kame-kame-a8f8f7c/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+20010808
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-kame20010808.tar.gz/kame-kame-99b56cf/openbsd/sys/dev/ic/font_8x16.c
+</td>
+    <td >
+45
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r49
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r49.tar.gz/kame-kame-cf6cf36/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040408a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040408a.tar.gz/kame-kame-2c11834/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap19990901
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap19990901.tar.gz/kame-kame-d604c76/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010322a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010322a.tar.gz/kame-kame-58f7a58/openbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20050510a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20050510a.tar.gz/kame-kame-47b48b4/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+s19990903
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-s19990903.tar.gz/kame-kame-afb56c3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20020426a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20020426a.tar.gz/kame-kame-86d094e/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010831a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010831a.tar.gz/kame-kame-0d87527/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r20031008
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r20031008.tar.gz/kame-kame-7767f83/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20011016a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20011016a.tar.gz/kame-kame-3358c20/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r47
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r47.tar.gz/kame-kame-a3c9db9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040407b
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040407b.tar.gz/kame-kame-94b65f0/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r41
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r41.tar.gz/kame-kame-d223459/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040116a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040116a.tar.gz/kame-kame-efbd8af/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040617a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040617a.tar.gz/kame-kame-12c498d/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20020507a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20020507a.tar.gz/kame-kame-0006cc2/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r411
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r411.tar.gz/kame-kame-fb1f7de/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r162
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r162.tar.gz/kame-kame-c1f3d7b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r43
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r43.tar.gz/kame-kame-24a41b7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r141
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r141.tar.gz/kame-kame-c016e0d/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010215a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010215a.tar.gz/kame-kame-db09ee7/openbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010806a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010806a.tar.gz/kame-kame-e2d5ed5/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010418a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010418a.tar.gz/kame-kame-7113c5c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r51
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r51.tar.gz/kame-kame-4577535/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040818a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040818a.tar.gz/kame-kame-eca4afd/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r153
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r153.tar.gz/kame-kame-858d8fa/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r45
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r45.tar.gz/kame-kame-4aa40a6/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+snap20000120
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-snap20000120.tar.gz/kame-kame-1972424/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+s19990809
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-s19990809.tar.gz/kame-kame-d2834d8/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r161
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r161.tar.gz/kame-kame-ecc2dbb/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20030826a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20030826a.tar.gz/kame-kame-058281c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r142
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r142.tar.gz/kame-kame-864bdf4/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r54
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r54.tar.gz/kame-kame-89a4a32/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r50
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r50.tar.gz/kame-kame-fca0da4/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+0_4
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v0_4.tar.gz/kame-kame-384663c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r152
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r152.tar.gz/kame-kame-6d47752/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+0_8_4
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v0_8_4.tar.gz/kame-kame-ef414ae/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010222a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010222a.tar.gz/kame-kame-476bfe2/openbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r410
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r410.tar.gz/kame-kame-0aa916b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r228
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r228.tar.gz/kame-kame-8d62584/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r53
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r53.tar.gz/kame-kame-06f5929/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20021120a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20021120a.tar.gz/kame-kame-84bf7dc/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20030711a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20030711a.tar.gz/kame-kame-97aaf29/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20001211a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20001211a.tar.gz/kame-kame-74730a1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20011215a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20011215a.tar.gz/kame-kame-8e9bf14/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20011026a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20011026a.tar.gz/kame-kame-b9167f9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040114a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040114a.tar.gz/kame-kame-1c9a6cf/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20040401a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20040401a.tar.gz/kame-kame-647c846/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+0_5
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-v0_5.tar.gz/kame-kame-c26ec4c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+racoon_s20010802a
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-racoon_s20010802a.tar.gz/kame-kame-65a3c8a/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r521
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r521.tar.gz/kame-kame-dc98210/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r44
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r44.tar.gz/kame-kame-4d361e0/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r48
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r48.tar.gz/kame-kame-b8e228f/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r42
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r42.tar.gz/kame-kame-7ae97a7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r151
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r151.tar.gz/kame-kame-48a2ca7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r46
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r46.tar.gz/kame-kame-4012957/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20021125
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20021125.tar.gz/kame-kame-eea7a62/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20011217
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20011217.tar.gz/kame-kame-d08921a/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20021014
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20021014.tar.gz/kame-kame-64564f0/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030630
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030630.tar.gz/kame-kame-357fb0b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010625
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010625.tar.gz/kame-kame-783b9d4/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20011126
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20011126.tar.gz/kame-kame-9ac70ee/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20060102
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20060102.tar.gz/kame-kame-04dc48b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20061009
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20061009.tar.gz/kame-kame-c1f7781/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020826
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020826.tar.gz/kame-kame-353dac1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20041227
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20041227.tar.gz/kame-kame-3a6b2cb/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050117
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050117.tar.gz/kame-kame-f050947/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20011015
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20011015.tar.gz/kame-kame-6d9ac07/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pim6sd_s20020403a
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pim6sd_s20020403a.tar.gz/kame-kame-34d8e44/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+openbsd_snap_20030922
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-openbsd_snap_20030922.tar.gz/kame-kame-14e1047/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20001225
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20001225.tar.gz/kame-kame-ea29284/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20021104
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20021104.tar.gz/kame-kame-3f3c95d/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20050815
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20050815.tar.gz/kame-kame-46357c1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20051212
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20051212.tar.gz/kame-kame-2f18251/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi4_snap_20010116
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi4_snap_20010116.tar.gz/kame-kame-843b840/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20041011
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20041011.tar.gz/kame-kame-ad73c2e/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010730
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010730.tar.gz/kame-kame-7c2969c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030908
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030908.tar.gz/kame-kame-bda6a36/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20031222
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20031222.tar.gz/kame-kame-fa580a4/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040503
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040503.tar.gz/kame-kame-d9061a3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010521
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010521.tar.gz/kame-kame-9bb1d00/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030602
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030602.tar.gz/kame-kame-6aead30/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030901
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030901.tar.gz/kame-kame-b6860ff/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20041025
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20041025.tar.gz/kame-kame-7916490/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+current20001213
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-current20001213.tar.gz/kame-kame-d9e6ac3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi4_snap_20010806
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi4_snap_20010806.tar.gz/kame-kame-cfc5b6a/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi3_snap_20020107
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi3_snap_20020107.tar.gz/kame-kame-b0a0037/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010611
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010611.tar.gz/kame-kame-6edf33b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+openbsd_snap_20021028
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-openbsd_snap_20021028.tar.gz/kame-kame-2d18983/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010806
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010806.tar.gz/kame-kame-ca63a14/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20011001
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20011001.tar.gz/kame-kame-732814c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20001204
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20001204.tar.gz/kame-kame-ccc52ed/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030623
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030623.tar.gz/kame-kame-fa0ffb3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20021007
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20021007.tar.gz/kame-kame-57f8e3b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20040308
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20040308.tar.gz/kame-kame-249592f/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20011008
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20011008.tar.gz/kame-kame-536c62f/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20061023
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20061023.tar.gz/kame-kame-4c977e1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20051121
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20051121.tar.gz/kame-kame-9a51f65/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20031124
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20031124.tar.gz/kame-kame-7bbfdab/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20060807
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20060807.tar.gz/kame-kame-836dec9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020422
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020422.tar.gz/kame-kame-e8117e7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040628
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040628.tar.gz/kame-kame-02c214e/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20050718
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20050718.tar.gz/kame-kame-a9fe4a5/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20050919
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20050919.tar.gz/kame-kame-6ce88d7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20060206
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20060206.tar.gz/kame-kame-9732405/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20031201
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20031201.tar.gz/kame-kame-f347494/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20050829
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20050829.tar.gz/kame-kame-25aa6c2/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+current20000524
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-current20000524.tar.gz/kame-kame-8f7f545/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pre_import_r45
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pre_import_r45.tar.gz/kame-kame-ab5ff99/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020415
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020415.tar.gz/kame-kame-89b39f7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020930
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020930.tar.gz/kame-kame-2d9f97c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050829
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050829.tar.gz/kame-kame-07370f9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+NetBSD-current-20000814
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-NetBSD-current-20000814.tar.gz/kame-kame-90dd742/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010903
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010903.tar.gz/kame-kame-ae4d9fd/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20031117
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20031117.tar.gz/kame-kame-bd059d0/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20061016
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20061016.tar.gz/kame-kame-5ab054e/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20030714
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20030714.tar.gz/kame-kame-c0eb83b/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20001211
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20001211.tar.gz/kame-kame-4a3e476/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050321
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050321.tar.gz/kame-kame-3a00fd3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050502
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050502.tar.gz/kame-kame-4c8ff8d/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20060724
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20060724.tar.gz/kame-kame-cbf1c69/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040809
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040809.tar.gz/kame-kame-6e6c3e8/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040705
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040705.tar.gz/kame-kame-c9e29b9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20010122
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20010122.tar.gz/kame-kame-88d8042/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20030901
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20030901.tar.gz/kame-kame-8cc08d1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20030707
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20030707.tar.gz/kame-kame-2e33099/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+openbsd_snap_20050613
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-openbsd_snap_20050613.tar.gz/kame-kame-d5bcfa7/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20021118
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20021118.tar.gz/kame-kame-5972ab1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r15
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r15.tar.gz/kame-kame-9c9ae0c/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20011022
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20011022.tar.gz/kame-kame-da3f7d2/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010402
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010402.tar.gz/kame-kame-bc5c5ad/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020610
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020610.tar.gz/kame-kame-e27e858/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20070701
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20070701.tar.gz/kame-kame-cc44d59/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020318
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020318.tar.gz/kame-kame-ee91223/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050509
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050509.tar.gz/kame-kame-2fddc91/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+bsdi4_snap_20030818
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-bsdi4_snap_20030818.tar.gz/kame-kame-756381d/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20011029
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20011029.tar.gz/kame-kame-db0c226/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20040216
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20040216.tar.gz/kame-kame-1cc47b9/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pre_merge_r54
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pre_merge_r54.tar.gz/kame-kame-7c4a392/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050411
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050411.tar.gz/kame-kame-ba1cf72/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20010212
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20010212.tar.gz/kame-kame-e81ceb8/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20060911
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20060911.tar.gz/kame-kame-cc61380/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020325
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020325.tar.gz/kame-kame-fdcfbba/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020902
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020902.tar.gz/kame-kame-2eb9741/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+current-20010904
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-current-20010904.tar.gz/kame-kame-c5bbdc6/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd5_snap_20060925
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd5_snap_20060925.tar.gz/kame-kame-eadad79/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20060612
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20060612.tar.gz/kame-kame-80b5686/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040621
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040621.tar.gz/kame-kame-233aa4a/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20050808
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20050808.tar.gz/kame-kame-588c861/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd3_snap_20010101
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd3_snap_20010101.tar.gz/kame-kame-26a11c3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010212
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010212.tar.gz/kame-kame-eb05ddf/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pim6dd_s20020403a
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pim6dd_s20020403a.tar.gz/kame-kame-e1307fa/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+dhcp6_20050723a
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-kame_dhcp6_20050723a.tar.gz/kame-kame-3636ab6/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pre_merge_r51
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pre_merge_r51.tar.gz/kame-kame-3c8b5a1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20011029
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20011029.tar.gz/kame-kame-b459588/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r16
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r16.tar.gz/kame-kame-9e58c88/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020715
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020715.tar.gz/kame-kame-f2ed104/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+netbsd_snap_20061030
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-netbsd_snap_20061030.tar.gz/kame-kame-60bbc4a/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010108
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010108.tar.gz/kame-kame-55c75a1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20040823
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20040823.tar.gz/kame-kame-5cd504e/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+r14
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-r14.tar.gz/kame-kame-aeaedd3/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20010326
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20010326.tar.gz/kame-kame-39f70e5/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+freebsd4_snap_20020304
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-freebsd4_snap_20020304.tar.gz/kame-kame-396a482/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+kame
+</td>
+    <td >
+pre_merge_r46
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+kame-pre_merge_r46.tar.gz/kame-kame-304adb1/netbsd/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+KC85 Emulator
+</td>
+    <td >
+KCemu-0.3.8
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+KCemu-0.3.8beta2.tar.gz/KCemu-0.3.8beta2/include/ui/font1.h
+</td>
+    <td >
+29
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+KC85 Emulator
+</td>
+    <td >
+KCemu-0.3.7
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+KCemu-0.3.7.tar.gz/KCemu-0.3.7/include/ui/font1.h
+</td>
+    <td >
+29
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+KC85 Emulator
+</td>
+    <td >
+KCemu-0.3.6
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+KCemu-0.3.6.tar.gz/KCemu-0.3.6/include/ui/font1.h
+</td>
+    <td >
+29
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+KC85 Emulator
+</td>
+    <td >
+KCemu-0.3.5
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+KCemu-0.3.5.tar.gz/KCemu-0.3.5/include/ui/font1.h
+</td>
+    <td >
+29
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.2.0
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.2.0/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.1.5
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.1.5.tar.bz2/kdenetwork-3.1.5/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.2.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.2.3.tar.bz2/kdenetwork-3.2.3/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.3.0
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.3.0.tar.bz2/kdenetwork-3.3.0/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.3.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.3.1.tar.bz2/kdenetwork-3.3.1/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.3.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.3.2.tar.bz2/kdenetwork-3.3.2/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.4.0
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.4.0.tar.bz2/kdenetwork-3.4.0/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.4.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.4.1.tar.bz2/kdenetwork-3.4.1/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.4.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.4.2.tar.bz2/kdenetwork-3.4.2/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.4.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.4.3.tar.bz2/kdenetwork-3.4.3/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.5.0
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.0.tar.bz2/kdenetwork-3.5.0/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.5.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.1.tar.bz2/kdenetwork-3.5.1/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.5.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.2.tar.bz2/kdenetwork-3.5.2/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network
+</td>
+    <td >
+3.5.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.3.tar.bz2/kdenetwork-3.5.3/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.3.tar.bz2/kdenetwork-3.5.3/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.7
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.7.tar.bz2/kdenetwork-3.5.7/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.4.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.4.3.tar.bz2/kdenetwork-3.4.3/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.6
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.6.tar.bz2/kdenetwork-3.5.6/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.2.tar.bz2/kdenetwork-3.5.2/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.4
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.4.tar.bz2/kdenetwork-3.5.4/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+KDE Network Libraries
+</td>
+    <td >
+3.5.5
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+kdenetwork-3.5.5.tar.bz2/kdenetwork-3.5.5/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.7.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.7.1.tar.gz/LibVNCServer-0.7.1/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.7
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.7.tar.gz/LibVNCServer-0.7/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.6
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.6.tar.gz/LibVNCServer-0.6/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.5
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.5-1.src.rpm/LibVNCServer-0.5/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.4
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+libvncserver-0.4.tar.gz/libvncserver-0.4/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.3
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+libvncserver-0.3.tar.gz/libvncserver-0.3/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+libvncserver-0.2.tar.gz/libvncserver-0.2/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.8.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.8.2.tar.gz/LibVNCServer-0.8.2/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.8
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.8.tar.gz/LibVNCServer-0.8/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.1.tar.gz/LibVNCServer-0.9.1/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.tar.gz/LibVNCServer-0.9/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.7
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.7.tar.gz/LibVNCServer-0.9.7/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.8
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.8.tar.gz/LibVNCServer-0.9.8/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.8.1
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.8.1.tar.gz/LibVNCServer-0.9.8.1/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.8.2
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.8.2.tar.gz/LibVNCServer-0.9.8.2/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+LibVNCServer - libvncserver
+</td>
+    <td >
+0.9.9
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+LibVNCServer-0.9.9.tar.gz/LibVNCServer-0.9.9/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+Linux-PDA fbVNCServer
+</td>
+    <td >
+familiar 0.8.x
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+fbvncserver-ipaq_0.0.7-002_arm.src.tar.gz/ipkg/src-lib/LibVNCServer-0.7.1.tar.gz.---/LibVNCServer-0.7.1/examples/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+pre-1.0
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon.tgz/umon/targets/csb_common/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.11
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon_feb26_2007.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.14
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon_aug6_2007.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.15
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.15.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.16
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.16.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.17
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.17.tgz/umon-1.17/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.17a
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.17a.tgz/umon-1.17/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.18
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.18.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+MicroMonitor - uMON
+</td>
+    <td >
+1.18a
+</td>
+    <td >
+MicroMonitor Software Public License
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-1.18a.tgz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+4.0
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-src-4.0.tar.gz/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.0-rc1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.0rc1.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+4.0.1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.0
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.0.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+5.1-syssrc.tar.gz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.1.1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.1.1.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.1.2
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.1.2.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.0.1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.0.1.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+5.0.2
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+syssrc-5.0.2.tgz/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+1.6.2
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD_1.6.2/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+2.0.3
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-2.0.3.tgz/NetBSD-2.0.3/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+2.0.2
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-2.0.2.tgz/NetBSD-2.0.2/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+2.1
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-2.1.tgz/NetBSD-2.1/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+3.0.2
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-3.0.2.tgz/NetBSD-3.0.2/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+1.3
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-1.3.tgz/NetBSD-1.3/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+1.4
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-1.4.tgz/NetBSD-1.4/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+1.5
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-1.5.tgz/NetBSD-1.5/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD
+</td>
+    <td >
+1.6
+</td>
+    <td >
+BSD 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-1.6.tgz/NetBSD-1.6/source/sets/syssrc.tgz.---/usr/src/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+54
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+14
+</td>
+    <td align='right'>
+32
+</td>
+    <td >
+NetBSD-timestamps
+</td>
+    <td >
+
+</td>
+    <td >
+Unspecified
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+20%
+</td>
+    <td >
+NetBSD-timestamps-master-20111016.tgz/4DA-NetBSD-timestamps-a137a81/sys/arch/atari/dev/font_8x16.c
+</td>
+    <td >
+58
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+PicoGUI
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+picogui-0.46/server/video/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+robotvisionexp
+</td>
+    <td >
+
+</td>
+    <td >
+LGPL 3.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+trunk-20120705-svn.tgz/trunk/umon_1.15/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+Trinity Desktop Environment
+</td>
+    <td >
+3.5.13
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+3.5.13-core.tar/kdenetwork-3.5.13.tar.gz.---/kdenetwork/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+Trinity Desktop Environment
+</td>
+    <td >
+3.5.12
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+3.5.12-core.tar/kdenetwork-3.5.12.tar.gz.---/kdenetwork/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr bgcolor="#F5F5F5">
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+110
+</td>
+    <td align='right'>
+31
+</td>
+    <td >
+Virtual Cogs COGlinux - umon
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+19%
+</td>
+    <td >
+umon-200507.tar.gz/umon/umon_main/target/dev/font8x16.h
+</td>
+    <td >
+83
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+<tr >
+    <td >
+ks2evm-bmc/bmc/src/bmc_font.c
+</td>
+    <td align='right'>
+12833
+</td>
+    <td align='right'>
+51
+</td>
+    <td align='right'>
+42
+</td>
+    <td >
+Webfish Linux - Webfish Workstation Packages
+</td>
+    <td >
+
+</td>
+    <td >
+GPL 2.0
+</td>
+    <td >
+Snippet
+</td>
+    <td >
+Precision Match
+</td>
+    <td >
+53%
+</td>
+    <td >
+webfish-workstation-packages-2.0pre3.tar/kde-reqs/kdenetwork-3.2.1.tar.bz2.---/kdenetwork-3.2.1/krfb/libvncserver/radon.h
+</td>
+    <td >
+7
+</td>
+    <td >
+
+</td>
+    <td >
+
+</td>
+</tr>
+    </tbody>
+</table>
+<br />
+    <table border='0' cellspacing='1' cellpadding='2' id='bottomDisclaimerTable'><tbody>
+<tr >
+    <td style='font-weight: bold;'>
+Confidential
+</td>
+    <td align='right' style='font-weight: bold;'>
+For Internal Use Only
+</td>
+</tr>
+<tr >
+    <td valign='top' style='font-weight: bold;'>
+DISCLAIMER:
+</td>
+    <td >
+This report was created using Black Duck(TM) Protex software compliance management products and services. The results contained in the report reflect the user's analysis and decision making. Recipient of the results bears all of the risks relating to use of, or reliance upon, such results or any other content contained in this report. Black Duck Software makes no representation or warranty to any party regarding the contents of this report, its accuracy, completeness or correctness, and Black Duck Software hereby disclaims any and all warranties (both express and implied) with respect thereto.
+</td>
+</tr>
+    </tbody></table>
+</body>
+</html>

@@ -1,0 +1,581 @@
+# Format=Tab; Hex=CompactUpper; BreakOutBytes=True; PEC=True [DO NOT REMOVE THIS LINE IF YOU WANT TO IMPORT USING A FUSION TOOL]
+# PEC byte is calculated on all message bytes, including addresses and Read/Write bit.
+# For reads, the last field is what is expected back from the device
+# Creator: Texas Instruments Fusion Digital Power Designer v1.8.325
+# Date: 2014?10?8?
+# Write PHASE_INFO [MFR 02] Rail #1: 1 Phase: 1A; Rail #2: 1 Phase: 2A; Rail #3: 1 Phase: 3A; Rail #4: 1 Phase: 4A
+I2CWrite	9C	D2	04	01	04	10	40	32
+# Write FREQUENCY_SWITCH [Rail #1] 751.0 kHz
+I2CWrite	9C	00	00	53
+I2CWrite	9C	33	EF	02	6C
+# Write FREQUENCY_SWITCH [Rail #2] 751.0 kHz
+I2CWrite	9C	00	01	54
+I2CWrite	9C	33	EF	02	6C
+# Write FREQUENCY_SWITCH [Rail #3] 751.0 kHz
+I2CWrite	9C	00	02	5D
+I2CWrite	9C	33	EF	02	6C
+# Write FREQUENCY_SWITCH [Rail #4] 751.0 kHz
+I2CWrite	9C	00	03	5A
+I2CWrite	9C	33	EF	02	6C
+# Execute STORE_DEFAULT_ALL
+I2CWrite	9C	11	6A
+Pause	1000	Pausing 1,000.00 ms for STORE_DEFAULT_ALL hold time
+# Execute SOFT_RESET [MFR 11]
+I2CWrite	9C	DB	12
+Pause	2000	Pausing 2,000.00 ms for Reset device and wait for it to come back online
+# Write VID_CONFIG [Rail #1] Format: Ignore, Vout Low: 0.000V, Vout High: 0.000V, Lockout Interval: 0 msec
+I2CWrite	9C	00	00	53
+I2CWrite	9C	BB	09	00	00	00	00	00	00	00	00	00	5F
+# Write VID_CONFIG [Rail #2] Format: Ignore, Vout Low: 0.000V, Vout High: 0.000V, Lockout Interval: 0 msec
+I2CWrite	9C	00	01	54
+I2CWrite	9C	BB	09	00	00	00	00	00	00	00	00	00	5F
+# Write VID_CONFIG [Rail #3] Format: Ignore, Vout Low: 0.000V, Vout High: 0.000V, Lockout Interval: 0 msec
+I2CWrite	9C	00	02	5D
+I2CWrite	9C	BB	09	00	00	00	00	00	00	00	00	00	5F
+# Write VID_CONFIG [Rail #4] Format: Ignore, Vout Low: 0.000V, Vout High: 0.000V, Lockout Interval: 0 msec
+I2CWrite	9C	00	03	5A
+I2CWrite	9C	BB	09	00	00	00	00	00	00	00	00	00	5F
+# Write MFR_DATE 130506
+I2CWrite	9C	9D	06	31	33	30	35	30	36	9F
+# Write MFR_ID MFR_ID
+I2CWrite	9C	99	06	4D	46	52	5F	49	44	E5
+# Write MFR_LOCATION TAIWAN
+I2CWrite	9C	9C	06	54	41	49	57	41	4E	49
+# Write MFR_MODEL DSPM-8305E
+I2CWrite	9C	9A	0A	44	53	50	4D	2D	38	33	30	35	45	CC
+# Write MFR_REVISION 78_A04
+I2CWrite	9C	9B	06	37	38	5F	41	30	34	F9
+# Write MFR_SERIAL 000000
+I2CWrite	9C	9E	06	30	30	30	30	30	30	F7
+# Write SECURITY_BIT_MASK [MFR 36] No commands write protected
+I2CWrite	9C	F4	20	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	C5
+# Write SYNC_CONFIG Sync Output Source: None; Rail #1: Trigger Source=None, Delay=0%; Rail #2: Trigger Source=DPWM1, Delay=25%; Rail #3: Trigger Source=DPWM2, Delay=25%; Rail #4: Trigger Source=DPWM3, Delay=25%
+I2CWrite	9C	B9	09	00	00	00	01	40	02	40	03	40	D2
+# Write USER_DATA_00 User_Data_00
+I2CWrite	9C	B0	0C	55	73	65	72	5F	44	61	74	61	5F	30	30	5A
+# Write VIN_OFF 5.000 V
+I2CWrite	9C	36	80	CA	EC
+# Write VIN_ON 6.000 V
+I2CWrite	9C	35	00	CB	E0
+# Write VIN_OV_FAULT_LIMIT 16.500 V
+I2CWrite	9C	55	10	DA	05
+# Write VIN_OV_FAULT_RESPONSE Response=2,Restart=0,Delay=0
+I2CWrite	9C	56	80	A8
+# Write VIN_OV_WARN_LIMIT 15.000 V
+I2CWrite	9C	57	C0	D3	56
+# Write VIN_SCALE [MFR 03] 0.130 
+I2CWrite	9C	D3	14	A2	48
+# Write VIN_UV_FAULT_LIMIT 0.000 V
+I2CWrite	9C	59	00	80	29
+# Write VIN_UV_FAULT_RESPONSE Response=0,Restart=0,Delay=0
+I2CWrite	9C	5A	00	DD
+# Write VIN_UV_WARN_LIMIT 7.797 V
+I2CWrite	9C	58	E6	CB	89
+# Write VOUT_MAX [Rail #1] 1.600 V
+I2CWrite	9C	00	00	53
+I2CWrite	9C	24	99	19	45
+# Write ON_OFF_CONFIG [Rail #1] Mode: CONTROL Pin Only; Control: Active High, Use TOFF_DELAY/TOFF_FALL
+I2CWrite	9C	02	16	1B
+# Write CLA_GAINS_BANK_0 [META,Rail #1] B1=[2.65234 -4.54297 1.92578] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	00	BD
+I2CWrite	9C	D5	18	02	A7	0B	75	01	ED	00	03	01	3A	0F	C6	00	00	00	00	84	10	41	04	04	03	3C	3B	15
+# Write CLA_GAINS_BANK_1 [META,Rail #1] B1=[2.65234 -4.54297 1.92578] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[2.00,1.75,1.00,1.75,2.00]
+I2CWrite	9C	D4	01	BA
+I2CWrite	9C	D5	18	02	A7	0B	75	01	ED	00	03	01	3A	0F	C6	00	00	00	00	84	1C	81	C8	04	03	3C	3B	D9
+# Write CLA_GAINS_BANK_2 [META,Rail #1] B1=[0.00000 0.00000 0.00000] A1=[1.00000 -1.00000 0.00000] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=1 Limits=[-5.00,-3.00,3.00,5.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	02	B3
+I2CWrite	9C	D5	18	00	00	00	00	00	00	00	03	01	00	00	00	00	00	00	00	04	10	41	04	05	03	3D	3B	07
+# Write DRIVER_CONFIG [MFR 06,Rail #1] DPWM Shutdown Action: TriState, Fault Pin On Restart Mode: IgnoreFaultPin, Interrupt Pin Polarity: ActiveHigh
+I2CWrite	9C	D6	01	90
+# Write DRIVER_MIN_PULSE [MFR 15,Rail #1] 30 ns
+I2CWrite	9C	DF	C0	DB	34
+# Write EADC_SAMPLE_TRIGGER [MFR 07,Rail #1] 228 ns
+I2CWrite	9C	D7	90	F3	B1
+# Write FAST_OC_FAULT_LIMIT [MFR 39,Rail #1] 37.50 A/Phase
+I2CWrite	9C	F7	58	E2	C0
+# Write IOUT_OC_FAULT_LIMIT [Rail #1] 32.50 A
+I2CWrite	9C	46	08	E2	4D
+# Write IOUT_OC_FAULT_RESPONSE [Rail #1] Response=2,Restart=0,Delay=0
+I2CWrite	9C	47	80	EA
+# Write IOUT_OC_LV_FAULT_LIMIT [Rail #1] 0.870 V
+I2CWrite	9C	48	EB	0D	9E
+# Write IOUT_OC_LV_FAULT_RESPONSE [Rail #1] Response=2,Restart=0,Delay=0
+I2CWrite	9C	49	80	3C
+# Write IOUT_OC_WARN_LIMIT [Rail #1] 26.25 A
+I2CWrite	9C	4A	48	DB	43
+# Write IOUT_UC_FAULT_LIMIT [Rail #1] -8.25 A
+I2CWrite	9C	4B	F0	D5	E5
+# Write IOUT_UC_FAULT_RESPONSE [Rail #1] Response=0,Restart=0,Delay=0
+I2CWrite	9C	4C	00	F4
+# Write LIGHT_LOAD_CONFIG [MFR 29,Rail #1] CLA Gain Control: NormalLoad; Phase Control: NormalLoad; Num Light Load Phases: 1
+I2CWrite	9C	ED	00	F9
+# Write LIGHT_LOAD_LIMIT_HIGH [MFR 27,Rail #1] 0.00 A
+I2CWrite	9C	EB	00	80	15
+# Write LIGHT_LOAD_LIMIT_LOW [MFR 38,Rail #1] 0.00 A
+I2CWrite	9C	F6	00	80	26
+# Write MAX_DUTY [Rail #1] 99.0 %
+I2CWrite	9C	32	18	EB	E9
+# Write OT_FAULT_LIMIT [Rail #1] 150 C
+I2CWrite	9C	4F	58	F2	0B
+# Write OT_FAULT_RESPONSE [Rail #1] Response=0,Restart=0,Delay=0
+I2CWrite	9C	50	00	5F
+# Write OT_WARN_LIMIT [Rail #1] 100 C
+I2CWrite	9C	51	20	EB	C0
+# Write PHASE_DROP_CAL [MFR 42,Rail #1] 1.000 
+I2CWrite	9C	FA	00	BA	7A
+# Write POWER_GOOD_OFF [Rail #1] 0.850 V
+I2CWrite	9C	5F	99	0D	A2
+# Write POWER_GOOD_ON [Rail #1] 0.900 V
+I2CWrite	9C	5E	66	0E	17
+# Write SMBALERT_MASK_CML [Rail #1] <EMPTY>
+I2CWrite	9C	1B	7E	00	84
+# Write SMBALERT_MASK_INPUT [Rail #1] <EMPTY>
+I2CWrite	9C	1B	7C	00	AE
+# Write SMBALERT_MASK_IOUT [Rail #1] <EMPTY>
+I2CWrite	9C	1B	7B	00	C5
+# Write SMBALERT_MASK_MFR_SPECIFIC [Rail #1] <EMPTY>
+I2CWrite	9C	1B	80	00	46
+# Write SMBALERT_MASK_OTHER [Rail #1] <EMPTY>
+I2CWrite	9C	1B	7F	00	91
+# Write SMBALERT_MASK_TEMPERATURE [Rail #1] <EMPTY>
+I2CWrite	9C	1B	7D	00	BB
+# Write SMBALERT_MASK_VOUT [Rail #1] VOUT_OV_FAULT
+I2CWrite	9C	1B	7A	80	59
+# Write THERMAL_COEFF [MFR 13,Rail #1] 0.394 %/C
+I2CWrite	9C	DD	27	AB	9D
+# Write TOFF_DELAY [Rail #1] 0.0 ms
+I2CWrite	9C	64	00	80	59
+# Write TOFF_FALL [Rail #1] 4.0 ms
+I2CWrite	9C	65	FF	C3	2B
+# Write TOFF_MAX_WARN_LIMIT [Rail #1] <No Limit>
+I2CWrite	9C	66	00	80	8F
+# Write TON_DELAY [Rail #1] 0.0 ms
+I2CWrite	9C	60	00	80	F2
+# Write TON_MAX_FAULT_LIMIT [Rail #1] 20.0 ms
+I2CWrite	9C	62	80	DA	13
+# Write TON_MAX_FAULT_RESPONSE [Rail #1] Response=0,Restart=0,Delay=0
+I2CWrite	9C	63	00	99
+# Write TON_RISE [Rail #1] 4.0 ms
+I2CWrite	9C	61	FF	C3	80
+# Write TRACKING_MODE [MFR 22,Rail #1] Off
+I2CWrite	9C	E6	FF	9D
+# Write TRACKING_SCALE_MONITOR [MFR 23,Rail #1] 1.000 
+I2CWrite	9C	E7	00	BA	49
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #1] 0.000 V
+I2CWrite	9C	D1	00	00	FA
+# Write VOUT_CAL_OFFSET [Rail #1] 0.000 V
+I2CWrite	9C	23	00	00	40
+# Write VOUT_COMMAND [Rail #1] 1.000 V
+I2CWrite	9C	21	00	10	E6
+# Write VOUT_MARGIN_HIGH [Rail #1] 1.050 V
+I2CWrite	9C	25	CC	10	5C
+# Write VOUT_MARGIN_LOW [Rail #1] 0.950 V
+I2CWrite	9C	26	33	0F	6B
+# Write VOUT_OV_FAULT_LIMIT [Rail #1] 1.150 V
+I2CWrite	9C	40	66	12	CD
+# Write VOUT_OV_FAULT_RESPONSE [Rail #1] Response=2,Restart=0,Delay=0
+I2CWrite	9C	41	80	94
+# Write VOUT_OV_WARN_LIMIT [Rail #1] 1.100 V
+I2CWrite	9C	42	99	11	C5
+# Write VOUT_SCALE_LOOP [Rail #1] 1.000 
+I2CWrite	9C	29	00	BA	E8
+# Write VOUT_SCALE_MONITOR [Rail #1] 1.000 
+I2CWrite	9C	2A	00	BA	55
+# Write VOUT_TRANSITION_RATE [Rail #1] 0.250 mV/us
+I2CWrite	9C	27	01	AA	A1
+# Write VOUT_UV_FAULT_LIMIT [Rail #1] 0.850 V
+I2CWrite	9C	44	99	0D	EC
+# Write VOUT_UV_FAULT_RESPONSE [Rail #1] Response=0,Restart=0,Delay=0
+I2CWrite	9C	45	00	49
+# Write VOUT_UV_WARN_LIMIT [Rail #1] 0.900 V
+I2CWrite	9C	43	66	0E	24
+# Write IOUT_CAL_GAIN_1 [Rail #1] 69.88 mohm
+I2CWrite	9C	38	2F	EA	FB
+# Write IOUT_CAL_OFFSET_1 [Rail #1] -4.30 A
+I2CWrite	9C	39	DA	CD	30
+# Write TEMPERATURE_CAL_GAIN_1 [MFR 20,Rail #1] 100.0 C/V
+I2CWrite	9C	E4	20	EB	EA
+# Write TEMPERATURE_CAL_OFFSET_1 [MFR 21,Rail #1] -47.00 C
+I2CWrite	9C	E5	10	E5	52
+# Write VOUT_MAX [Rail #2] 1.600 V
+I2CWrite	9C	00	01	54
+I2CWrite	9C	24	99	19	45
+# Write ON_OFF_CONFIG [Rail #2] Mode: CONTROL Pin Only; Control: Active High, Use TOFF_DELAY/TOFF_FALL
+I2CWrite	9C	02	16	1B
+# Write CLA_GAINS_BANK_0 [META,Rail #2] B1=[6.08594 -11.50000 5.43750] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	00	BD
+I2CWrite	9C	D5	18	03	0B	0A	40	02	B8	00	04	00	9D	0F	E3	00	00	00	00	84	10	41	04	04	03	3C	3B	19
+# Write CLA_GAINS_BANK_1 [META,Rail #2] B1=[6.08594 -11.50000 5.43750] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[2.00,1.75,1.00,1.75,2.00]
+I2CWrite	9C	D4	01	BA
+I2CWrite	9C	D5	18	03	0B	0A	40	02	B8	00	04	00	9D	0F	E3	00	00	00	00	84	1C	81	C8	04	03	3C	3B	D5
+# Write CLA_GAINS_BANK_2 [META,Rail #2] B1=[0.00000 0.00000 0.00000] A1=[1.00000 -1.00000 0.00000] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=1 Limits=[-5.00,-3.00,3.00,5.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	02	B3
+I2CWrite	9C	D5	18	00	00	00	00	00	00	00	03	01	00	00	00	00	00	00	00	04	10	41	04	05	03	3D	3B	07
+# Write DRIVER_CONFIG [MFR 06,Rail #2] DPWM Shutdown Action: TriState, Fault Pin On Restart Mode: IgnoreFaultPin, Interrupt Pin Polarity: ActiveHigh
+I2CWrite	9C	D6	01	90
+# Write DRIVER_MIN_PULSE [MFR 15,Rail #2] 30 ns
+I2CWrite	9C	DF	C0	DB	34
+# Write EADC_SAMPLE_TRIGGER [MFR 07,Rail #2] 228 ns
+I2CWrite	9C	D7	90	F3	B1
+# Write FAST_OC_FAULT_LIMIT [MFR 39,Rail #2] 37.50 A/Phase
+I2CWrite	9C	F7	58	E2	C0
+# Write IOUT_OC_FAULT_LIMIT [Rail #2] 32.50 A
+I2CWrite	9C	46	08	E2	4D
+# Write IOUT_OC_FAULT_RESPONSE [Rail #2] Response=2,Restart=0,Delay=0
+I2CWrite	9C	47	80	EA
+# Write IOUT_OC_LV_FAULT_LIMIT [Rail #2] 0.870 V
+I2CWrite	9C	48	EB	0D	9E
+# Write IOUT_OC_LV_FAULT_RESPONSE [Rail #2] Response=2,Restart=0,Delay=0
+I2CWrite	9C	49	80	3C
+# Write IOUT_OC_WARN_LIMIT [Rail #2] 26.25 A
+I2CWrite	9C	4A	48	DB	43
+# Write IOUT_UC_FAULT_LIMIT [Rail #2] -8.25 A
+I2CWrite	9C	4B	F0	D5	E5
+# Write IOUT_UC_FAULT_RESPONSE [Rail #2] Response=0,Restart=0,Delay=0
+I2CWrite	9C	4C	00	F4
+# Write LIGHT_LOAD_CONFIG [MFR 29,Rail #2] CLA Gain Control: NormalLoad; Phase Control: NormalLoad; Num Light Load Phases: 1
+I2CWrite	9C	ED	00	F9
+# Write LIGHT_LOAD_LIMIT_HIGH [MFR 27,Rail #2] 0.00 A
+I2CWrite	9C	EB	00	80	15
+# Write LIGHT_LOAD_LIMIT_LOW [MFR 38,Rail #2] 0.00 A
+I2CWrite	9C	F6	00	80	26
+# Write MAX_DUTY [Rail #2] 99.0 %
+I2CWrite	9C	32	18	EB	E9
+# Write OT_FAULT_LIMIT [Rail #2] 150 C
+I2CWrite	9C	4F	58	F2	0B
+# Write OT_FAULT_RESPONSE [Rail #2] Response=2,Restart=0,Delay=0
+I2CWrite	9C	50	80	D6
+# Write OT_WARN_LIMIT [Rail #2] 100 C
+I2CWrite	9C	51	20	EB	C0
+# Write PHASE_DROP_CAL [MFR 42,Rail #2] 1.000 
+I2CWrite	9C	FA	00	BA	7A
+# Write POWER_GOOD_OFF [Rail #2] 0.850 V
+I2CWrite	9C	5F	99	0D	A2
+# Write POWER_GOOD_ON [Rail #2] 0.900 V
+I2CWrite	9C	5E	66	0E	17
+# Write SMBALERT_MASK_CML [Rail #2] <EMPTY>
+I2CWrite	9C	1B	7E	00	84
+# Write SMBALERT_MASK_INPUT [Rail #2] <EMPTY>
+I2CWrite	9C	1B	7C	00	AE
+# Write SMBALERT_MASK_IOUT [Rail #2] <EMPTY>
+I2CWrite	9C	1B	7B	00	C5
+# Write SMBALERT_MASK_MFR_SPECIFIC [Rail #2] <EMPTY>
+I2CWrite	9C	1B	80	00	46
+# Write SMBALERT_MASK_OTHER [Rail #2] <EMPTY>
+I2CWrite	9C	1B	7F	00	91
+# Write SMBALERT_MASK_TEMPERATURE [Rail #2] OT_FAULT
+I2CWrite	9C	1B	7D	80	32
+# Write SMBALERT_MASK_VOUT [Rail #2] VOUT_OV_FAULT
+I2CWrite	9C	1B	7A	80	59
+# Write THERMAL_COEFF [MFR 13,Rail #2] 0.394 %/C
+I2CWrite	9C	DD	27	AB	9D
+# Write TOFF_DELAY [Rail #2] 0.0 ms
+I2CWrite	9C	64	00	80	59
+# Write TOFF_FALL [Rail #2] 4.0 ms
+I2CWrite	9C	65	FF	C3	2B
+# Write TOFF_MAX_WARN_LIMIT [Rail #2] <No Limit>
+I2CWrite	9C	66	00	80	8F
+# Write TON_DELAY [Rail #2] 0.0 ms
+I2CWrite	9C	60	00	80	F2
+# Write TON_MAX_FAULT_LIMIT [Rail #2] 20.0 ms
+I2CWrite	9C	62	80	DA	13
+# Write TON_MAX_FAULT_RESPONSE [Rail #2] Response=0,Restart=0,Delay=0
+I2CWrite	9C	63	00	99
+# Write TON_RISE [Rail #2] 4.0 ms
+I2CWrite	9C	61	FF	C3	80
+# Write TRACKING_MODE [MFR 22,Rail #2] Off
+I2CWrite	9C	E6	80	E7
+# Write TRACKING_SCALE_MONITOR [MFR 23,Rail #2] 1.000 
+I2CWrite	9C	E7	00	BA	49
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #2] 0.000 V
+I2CWrite	9C	D1	00	00	FA
+# Write VOUT_CAL_OFFSET [Rail #2] 0.000 V
+I2CWrite	9C	23	00	00	40
+# Write VOUT_COMMAND [Rail #2] 1.000 V
+I2CWrite	9C	21	00	10	E6
+# Write VOUT_MARGIN_HIGH [Rail #2] 1.050 V
+I2CWrite	9C	25	CC	10	5C
+# Write VOUT_MARGIN_LOW [Rail #2] 0.950 V
+I2CWrite	9C	26	33	0F	6B
+# Write VOUT_OV_FAULT_LIMIT [Rail #2] 1.150 V
+I2CWrite	9C	40	66	12	CD
+# Write VOUT_OV_FAULT_RESPONSE [Rail #2] Response=2,Restart=0,Delay=0
+I2CWrite	9C	41	80	94
+# Write VOUT_OV_WARN_LIMIT [Rail #2] 1.100 V
+I2CWrite	9C	42	99	11	C5
+# Write VOUT_SCALE_LOOP [Rail #2] 1.000 
+I2CWrite	9C	29	00	BA	E8
+# Write VOUT_SCALE_MONITOR [Rail #2] 1.000 
+I2CWrite	9C	2A	00	BA	55
+# Write VOUT_TRANSITION_RATE [Rail #2] 0.250 mV/us
+I2CWrite	9C	27	01	AA	A1
+# Write VOUT_UV_FAULT_LIMIT [Rail #2] 0.850 V
+I2CWrite	9C	44	99	0D	EC
+# Write VOUT_UV_FAULT_RESPONSE [Rail #2] Response=0,Restart=0,Delay=0
+I2CWrite	9C	45	00	49
+# Write VOUT_UV_WARN_LIMIT [Rail #2] 0.900 V
+I2CWrite	9C	43	66	0E	24
+# Write IOUT_CAL_GAIN_1 [Rail #2] 88.13 mohm
+I2CWrite	9C	38	C1	EA	6E
+# Write IOUT_CAL_OFFSET_1 [Rail #2] -4.50 A
+I2CWrite	9C	39	C0	CD	E5
+# Write TEMPERATURE_CAL_GAIN_1 [MFR 20,Rail #2] 100.0 C/V
+I2CWrite	9C	E4	20	EB	EA
+# Write TEMPERATURE_CAL_OFFSET_1 [MFR 21,Rail #2] -47.00 C
+I2CWrite	9C	E5	10	E5	52
+# Write VOUT_MAX [Rail #3] 1.600 V
+I2CWrite	9C	00	02	5D
+I2CWrite	9C	24	99	19	45
+# Write ON_OFF_CONFIG [Rail #3] Mode: CONTROL Pin Only; Control: Active High, Use TOFF_DELAY/TOFF_FALL
+I2CWrite	9C	02	16	1B
+# Write CLA_GAINS_BANK_0 [META,Rail #3] B1=[2.85938 -4.65625 1.83984] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	00	BD
+I2CWrite	9C	D5	18	02	DC	0B	58	01	D7	00	03	01	3A	0F	C6	00	00	00	00	84	10	41	04	04	03	3C	3B	8F
+# Write CLA_GAINS_BANK_1 [META,Rail #3] B1=[2.85938 -4.65625 1.83984] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[2.00,1.75,1.00,1.75,2.00]
+I2CWrite	9C	D4	01	BA
+I2CWrite	9C	D5	18	02	DC	0B	58	01	D7	00	03	01	3A	0F	C6	00	00	00	00	84	1C	81	C8	04	03	3C	3B	43
+# Write CLA_GAINS_BANK_2 [META,Rail #3] B1=[0.00000 0.00000 0.00000] A1=[1.00000 -1.00000 0.00000] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=1 Limits=[-5.00,-3.00,3.00,5.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	02	B3
+I2CWrite	9C	D5	18	00	00	00	00	00	00	00	03	01	00	00	00	00	00	00	00	04	10	41	04	05	03	3D	3B	07
+# Write DRIVER_CONFIG [MFR 06,Rail #3] DPWM Shutdown Action: TriState, Fault Pin On Restart Mode: IgnoreFaultPin, Interrupt Pin Polarity: ActiveHigh
+I2CWrite	9C	D6	01	90
+# Write DRIVER_MIN_PULSE [MFR 15,Rail #3] 20 ns
+I2CWrite	9C	DF	80	DA	68
+# Write EADC_SAMPLE_TRIGGER [MFR 07,Rail #3] 228 ns
+I2CWrite	9C	D7	90	F3	B1
+# Write FAST_OC_FAULT_LIMIT [MFR 39,Rail #3] 6.00 A/Phase
+I2CWrite	9C	F7	00	CB	BB
+# Write IOUT_OC_FAULT_LIMIT [Rail #3] 5.20 A
+I2CWrite	9C	46	9A	CA	5E
+# Write IOUT_OC_FAULT_RESPONSE [Rail #3] Response=2,Restart=0,Delay=0
+I2CWrite	9C	47	80	EA
+# Write IOUT_OC_LV_FAULT_LIMIT [Rail #3] 0.826 V
+I2CWrite	9C	48	39	0D	0E
+# Write IOUT_OC_LV_FAULT_RESPONSE [Rail #3] Response=2,Restart=0,Delay=0
+I2CWrite	9C	49	80	3C
+# Write IOUT_OC_WARN_LIMIT [Rail #3] 4.20 A
+I2CWrite	9C	4A	1A	CA	12
+# Write IOUT_UC_FAULT_LIMIT [Rail #3] -1.31 A
+I2CWrite	9C	4B	60	BD	1B
+# Write IOUT_UC_FAULT_RESPONSE [Rail #3] Response=0,Restart=0,Delay=0
+I2CWrite	9C	4C	00	F4
+# Write LIGHT_LOAD_CONFIG [MFR 29,Rail #3] CLA Gain Control: NormalLoad; Phase Control: NormalLoad; Num Light Load Phases: 1
+I2CWrite	9C	ED	00	F9
+# Write LIGHT_LOAD_LIMIT_HIGH [MFR 27,Rail #3] 0.00 A
+I2CWrite	9C	EB	00	80	15
+# Write LIGHT_LOAD_LIMIT_LOW [MFR 38,Rail #3] 0.00 A
+I2CWrite	9C	F6	00	80	26
+# Write MAX_DUTY [Rail #3] 99.0 %
+I2CWrite	9C	32	18	EB	E9
+# Write OT_FAULT_LIMIT [Rail #3] 150 C
+I2CWrite	9C	4F	58	F2	0B
+# Write OT_FAULT_RESPONSE [Rail #3] Response=2,Restart=0,Delay=0
+I2CWrite	9C	50	80	D6
+# Write OT_WARN_LIMIT [Rail #3] 100 C
+I2CWrite	9C	51	20	EB	C0
+# Write PHASE_DROP_CAL [MFR 42,Rail #3] 1.000 
+I2CWrite	9C	FA	00	BA	7A
+# Write POWER_GOOD_OFF [Rail #3] 0.807 V
+I2CWrite	9C	5F	EB	0C	2D
+# Write POWER_GOOD_ON [Rail #3] 0.855 V
+I2CWrite	9C	5E	AE	0D	5B
+# Write SMBALERT_MASK_CML [Rail #3] <EMPTY>
+I2CWrite	9C	1B	7E	00	84
+# Write SMBALERT_MASK_INPUT [Rail #3] <EMPTY>
+I2CWrite	9C	1B	7C	00	AE
+# Write SMBALERT_MASK_IOUT [Rail #3] <EMPTY>
+I2CWrite	9C	1B	7B	00	C5
+# Write SMBALERT_MASK_MFR_SPECIFIC [Rail #3] <EMPTY>
+I2CWrite	9C	1B	80	00	46
+# Write SMBALERT_MASK_OTHER [Rail #3] <EMPTY>
+I2CWrite	9C	1B	7F	00	91
+# Write SMBALERT_MASK_TEMPERATURE [Rail #3] OT_FAULT
+I2CWrite	9C	1B	7D	80	32
+# Write SMBALERT_MASK_VOUT [Rail #3] VOUT_OV_FAULT
+I2CWrite	9C	1B	7A	80	59
+# Write THERMAL_COEFF [MFR 13,Rail #3] 0.000 %/C
+I2CWrite	9C	DD	00	80	89
+# Write TOFF_DELAY [Rail #3] 0.0 ms
+I2CWrite	9C	64	00	80	59
+# Write TOFF_FALL [Rail #3] 3.8 ms
+I2CWrite	9C	65	CC	C3	ED
+# Write TOFF_MAX_WARN_LIMIT [Rail #3] <No Limit>
+I2CWrite	9C	66	00	80	8F
+# Write TON_DELAY [Rail #3] 10.0 ms
+I2CWrite	9C	60	80	D2	FD
+# Write TON_MAX_FAULT_LIMIT [Rail #3] 19.0 ms
+I2CWrite	9C	62	60	DA	50
+# Write TON_MAX_FAULT_RESPONSE [Rail #3] Response=0,Restart=0,Delay=0
+I2CWrite	9C	63	00	99
+# Write TON_RISE [Rail #3] 3.8 ms
+I2CWrite	9C	61	CC	C3	46
+# Write TRACKING_MODE [MFR 22,Rail #3] Off
+I2CWrite	9C	E6	80	E7
+# Write TRACKING_SCALE_MONITOR [MFR 23,Rail #3] 1.000 
+I2CWrite	9C	E7	00	BA	49
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #3] 0.000 V
+I2CWrite	9C	D1	00	00	FA
+# Write VOUT_CAL_OFFSET [Rail #3] 0.000 V
+I2CWrite	9C	23	00	00	40
+# Write VOUT_COMMAND [Rail #3] 0.950 V
+I2CWrite	9C	21	33	0F	7D
+# Write VOUT_MARGIN_HIGH [Rail #3] 0.997 V
+I2CWrite	9C	25	F5	0F	45
+# Write VOUT_MARGIN_LOW [Rail #3] 0.902 V
+I2CWrite	9C	26	70	0E	08
+# Write VOUT_OV_FAULT_LIMIT [Rail #3] 1.092 V
+I2CWrite	9C	40	7A	11	6F
+# Write VOUT_OV_FAULT_RESPONSE [Rail #3] Response=2,Restart=0,Delay=0
+I2CWrite	9C	41	80	94
+# Write VOUT_OV_WARN_LIMIT [Rail #3] 1.045 V
+I2CWrite	9C	42	B8	10	79
+# Write VOUT_SCALE_LOOP [Rail #3] 1.000 
+I2CWrite	9C	29	00	BA	E8
+# Write VOUT_SCALE_MONITOR [Rail #3] 1.000 
+I2CWrite	9C	2A	00	BA	55
+# Write VOUT_TRANSITION_RATE [Rail #3] 0.250 mV/us
+I2CWrite	9C	27	01	AA	A1
+# Write VOUT_UV_FAULT_LIMIT [Rail #3] 0.807 V
+I2CWrite	9C	44	EB	0C	63
+# Write VOUT_UV_FAULT_RESPONSE [Rail #3] Response=0,Restart=0,Delay=0
+I2CWrite	9C	45	00	49
+# Write VOUT_UV_WARN_LIMIT [Rail #3] 0.855 V
+I2CWrite	9C	43	AE	0D	68
+# Write IOUT_CAL_GAIN_1 [Rail #3] 139.75 mohm
+I2CWrite	9C	38	2F	F2	B3
+# Write IOUT_CAL_OFFSET_1 [Rail #3] 0.00 A
+I2CWrite	9C	39	00	80	EC
+# Write TEMPERATURE_CAL_GAIN_1 [MFR 20,Rail #3] 100.0 C/V
+I2CWrite	9C	E4	20	EB	EA
+# Write TEMPERATURE_CAL_OFFSET_1 [MFR 21,Rail #3] -47.00 C
+I2CWrite	9C	E5	10	E5	52
+# Write VOUT_MAX [Rail #4] 1.600 V
+I2CWrite	9C	00	03	5A
+I2CWrite	9C	24	99	19	45
+# Write ON_OFF_CONFIG [Rail #4] Mode: CONTROL Pin Only; Control: Active High, Use TOFF_DELAY/TOFF_FALL
+I2CWrite	9C	02	16	1B
+# Write CLA_GAINS_BANK_0 [META,Rail #4] B1=[2.85938 -4.65625 1.83984] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	00	BD
+I2CWrite	9C	D5	18	02	DC	0B	58	01	D7	00	03	01	3A	0F	C6	00	00	00	00	84	10	41	04	04	03	3C	3B	8F
+# Write CLA_GAINS_BANK_1 [META,Rail #4] B1=[2.85938 -4.65625 1.83984] A1=[1.00000 -1.22656 0.22656] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=4 Limits=[-5.00,-4.00,3.00,4.00] Gains=[2.00,1.75,1.00,1.75,2.00]
+I2CWrite	9C	D4	01	BA
+I2CWrite	9C	D5	18	02	DC	0B	58	01	D7	00	03	01	3A	0F	C6	00	00	00	00	84	1C	81	C8	04	03	3C	3B	43
+# Write CLA_GAINS_BANK_2 [META,Rail #4] B1=[0.00000 0.00000 0.00000] A1=[1.00000 -1.00000 0.00000] B2=[1.00000 0.00000] A2=[1.00000 0.00000] AFE_Gain=1 Limits=[-5.00,-3.00,3.00,5.00] Gains=[1.00,1.00,1.00,1.00,1.00]
+I2CWrite	9C	D4	02	B3
+I2CWrite	9C	D5	18	00	00	00	00	00	00	00	03	01	00	00	00	00	00	00	00	04	10	41	04	05	03	3D	3B	07
+# Write DRIVER_CONFIG [MFR 06,Rail #4] DPWM Shutdown Action: TriState, Fault Pin On Restart Mode: IgnoreFaultPin, Interrupt Pin Polarity: ActiveHigh
+I2CWrite	9C	D6	01	90
+# Write DRIVER_MIN_PULSE [MFR 15,Rail #4] 20 ns
+I2CWrite	9C	DF	80	DA	68
+# Write EADC_SAMPLE_TRIGGER [MFR 07,Rail #4] 228 ns
+I2CWrite	9C	D7	90	F3	B1
+# Write FAST_OC_FAULT_LIMIT [MFR 39,Rail #4] 25.00 A/Phase
+I2CWrite	9C	F7	20	DB	65
+# Write IOUT_OC_FAULT_LIMIT [Rail #4] 6.50 A
+I2CWrite	9C	46	40	CB	61
+# Write IOUT_OC_FAULT_RESPONSE [Rail #4] Response=2,Restart=0,Delay=0
+I2CWrite	9C	47	80	EA
+# Write IOUT_OC_LV_FAULT_LIMIT [Rail #4] 0.826 V
+I2CWrite	9C	48	39	0D	0E
+# Write IOUT_OC_LV_FAULT_RESPONSE [Rail #4] Response=2,Restart=0,Delay=0
+I2CWrite	9C	49	80	3C
+# Write IOUT_OC_WARN_LIMIT [Rail #4] 5.25 A
+I2CWrite	9C	4A	A0	CA	DF
+# Write IOUT_UC_FAULT_LIMIT [Rail #4] -1.66 A
+I2CWrite	9C	4B	B0	BC	A6
+# Write IOUT_UC_FAULT_RESPONSE [Rail #4] Response=0,Restart=0,Delay=0
+I2CWrite	9C	4C	00	F4
+# Write LIGHT_LOAD_CONFIG [MFR 29,Rail #4] CLA Gain Control: NormalLoad; Phase Control: NormalLoad; Num Light Load Phases: 1
+I2CWrite	9C	ED	00	F9
+# Write LIGHT_LOAD_LIMIT_HIGH [MFR 27,Rail #4] 0.00 A
+I2CWrite	9C	EB	00	80	15
+# Write LIGHT_LOAD_LIMIT_LOW [MFR 38,Rail #4] 0.00 A
+I2CWrite	9C	F6	00	80	26
+# Write MAX_DUTY [Rail #4] 99.0 %
+I2CWrite	9C	32	18	EB	E9
+# Write OT_FAULT_LIMIT [Rail #4] 150 C
+I2CWrite	9C	4F	58	F2	0B
+# Write OT_FAULT_RESPONSE [Rail #4] Response=2,Restart=0,Delay=0
+I2CWrite	9C	50	80	D6
+# Write OT_WARN_LIMIT [Rail #4] 100 C
+I2CWrite	9C	51	20	EB	C0
+# Write PHASE_DROP_CAL [MFR 42,Rail #4] 1.000 
+I2CWrite	9C	FA	00	BA	7A
+# Write POWER_GOOD_OFF [Rail #4] 0.807 V
+I2CWrite	9C	5F	EB	0C	2D
+# Write POWER_GOOD_ON [Rail #4] 0.855 V
+I2CWrite	9C	5E	AE	0D	5B
+# Write SMBALERT_MASK_CML [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7E	00	84
+# Write SMBALERT_MASK_INPUT [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7C	00	AE
+# Write SMBALERT_MASK_IOUT [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7B	00	C5
+# Write SMBALERT_MASK_MFR_SPECIFIC [Rail #4] <EMPTY>
+I2CWrite	9C	1B	80	00	46
+# Write SMBALERT_MASK_OTHER [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7F	00	91
+# Write SMBALERT_MASK_TEMPERATURE [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7D	00	BB
+# Write SMBALERT_MASK_VOUT [Rail #4] <EMPTY>
+I2CWrite	9C	1B	7A	00	D0
+# Write THERMAL_COEFF [MFR 13,Rail #4] 0.000 %/C
+I2CWrite	9C	DD	00	80	89
+# Write TOFF_DELAY [Rail #4] 0.0 ms
+I2CWrite	9C	64	00	80	59
+# Write TOFF_FALL [Rail #4] 3.8 ms
+I2CWrite	9C	65	CC	C3	ED
+# Write TOFF_MAX_WARN_LIMIT [Rail #4] <No Limit>
+I2CWrite	9C	66	00	80	8F
+# Write TON_DELAY [Rail #4] 10.0 ms
+I2CWrite	9C	60	80	D2	FD
+# Write TON_MAX_FAULT_LIMIT [Rail #4] 19.0 ms
+I2CWrite	9C	62	60	DA	50
+# Write TON_MAX_FAULT_RESPONSE [Rail #4] Response=0,Restart=0,Delay=0
+I2CWrite	9C	63	00	99
+# Write TON_RISE [Rail #4] 3.8 ms
+I2CWrite	9C	61	CC	C3	46
+# Write TRACKING_MODE [MFR 22,Rail #4] Off
+I2CWrite	9C	E6	80	E7
+# Write TRACKING_SCALE_MONITOR [MFR 23,Rail #4] 1.000 
+I2CWrite	9C	E7	00	BA	49
+# Write VOUT_CAL_MONITOR [MFR 01,Rail #4] 0.000 V
+I2CWrite	9C	D1	00	00	FA
+# Write VOUT_CAL_OFFSET [Rail #4] 0.000 V
+I2CWrite	9C	23	00	00	40
+# Write VOUT_COMMAND [Rail #4] 0.950 V
+I2CWrite	9C	21	33	0F	7D
+# Write VOUT_MARGIN_HIGH [Rail #4] 0.997 V
+I2CWrite	9C	25	F5	0F	45
+# Write VOUT_MARGIN_LOW [Rail #4] 0.902 V
+I2CWrite	9C	26	70	0E	08
+# Write VOUT_OV_FAULT_LIMIT [Rail #4] 1.092 V
+I2CWrite	9C	40	7A	11	6F
+# Write VOUT_OV_FAULT_RESPONSE [Rail #4] Response=2,Restart=0,Delay=0
+I2CWrite	9C	41	80	94
+# Write VOUT_OV_WARN_LIMIT [Rail #4] 1.045 V
+I2CWrite	9C	42	B8	10	79
+# Write VOUT_SCALE_LOOP [Rail #4] 1.000 
+I2CWrite	9C	29	00	BA	E8
+# Write VOUT_SCALE_MONITOR [Rail #4] 1.000 
+I2CWrite	9C	2A	00	BA	55
+# Write VOUT_TRANSITION_RATE [Rail #4] 0.250 mV/us
+I2CWrite	9C	27	01	AA	A1
+# Write VOUT_UV_FAULT_LIMIT [Rail #4] 0.807 V
+I2CWrite	9C	44	EB	0C	63
+# Write VOUT_UV_FAULT_RESPONSE [Rail #4] Response=0,Restart=0,Delay=0
+I2CWrite	9C	45	00	49
+# Write VOUT_UV_WARN_LIMIT [Rail #4] 0.855 V
+I2CWrite	9C	43	AE	0D	68
+# Write IOUT_CAL_GAIN_1 [Rail #4] 129.75 mohm
+I2CWrite	9C	38	07	F2	B5
+# Write IOUT_CAL_OFFSET_1 [Rail #4] 0.00 A
+I2CWrite	9C	39	00	80	EC
+# Write TEMPERATURE_CAL_GAIN_1 [MFR 20,Rail #4] 100.0 C/V
+I2CWrite	9C	E4	20	EB	EA
+# Write TEMPERATURE_CAL_OFFSET_1 [MFR 21,Rail #4] -47.00 C
+I2CWrite	9C	E5	10	E5	52
+# Store configuration to data flash
+# Execute STORE_DEFAULT_ALL
+I2CWrite	9C	11	6A
+Pause	1000	Pausing 1,000.00 ms for STORE_DEFAULT_ALL hold time
